@@ -8,11 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
-//TODO addProfessor
-//TODO addStudent
-//TODO create http query for call auto gen schedule
-//TODO auto gen schedule (later)
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/deanery")
@@ -29,8 +25,6 @@ public class DeaneryController {
     @Autowired
     private StudentService studentService;
 
-
-
     @PostMapping("/registerProfessor")
     public ResponseEntity registerProfessor(@RequestBody ProfessorEntity professor) {
         try {
@@ -42,7 +36,7 @@ public class DeaneryController {
     }
 
     @PostMapping("/registerStudent")
-    public ResponseEntity registerStudent(@RequestBody StudentEntity student , @RequestParam Long specialityId) {
+    public ResponseEntity registerStudent(@Valid @RequestBody StudentEntity student , @RequestParam Long specialityId) {
         try {
             studentService.registration(student, specialityId);
             return ResponseEntity.ok("Student created");
@@ -52,7 +46,7 @@ public class DeaneryController {
     }
 
     @PostMapping("/addSpeciality")
-    public ResponseEntity addSpeciality(@RequestBody SpecialityEntity speciality) {
+    public ResponseEntity addSpeciality(@Valid @RequestBody SpecialityEntity speciality) {
         try {
             specialityService.addSpeciality(speciality);
             return ResponseEntity.ok("Speciality created");

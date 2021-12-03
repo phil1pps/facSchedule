@@ -1,6 +1,9 @@
 package com.example.facSchedule.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
@@ -9,9 +12,15 @@ public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idStudent;
+    @NotBlank(message = "studentName is mandatory")
     private String studentName;
+    @NotNull
+    @Min(1)
+    @Min(6)
     private Integer course;
+    @NotBlank(message = "login is mandatory")
     private String login;
+    @NotBlank(message = "password is mandatory")
     private String password;
 
     @ManyToOne

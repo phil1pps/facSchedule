@@ -24,10 +24,19 @@ public class StudentService {
 
     @Autowired
     private StudentRepo studentRepo;
-    @Autowired
+
     private SpecialityRepo specialityRepo;
     @Autowired
+    public void setSpecialityRepo(SpecialityRepo specialityRepo) {
+        this.specialityRepo = specialityRepo;
+    }
+
     private PickedGroupRepo pickedGroupRepo;
+    @Autowired
+    public StudentService(PickedGroupRepo pickedGroupRepo) {
+        this.pickedGroupRepo = pickedGroupRepo;
+    }
+
     @Autowired
     private SubjectGroupRepo subjectGroupRepo;
 

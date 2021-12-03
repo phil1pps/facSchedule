@@ -1,0 +1,282 @@
+openapi: 3.0.1
+servers:
+- url: http://localhost:9191
+  description: Generated server url
+paths:
+  /deanery/registerStudent:
+    post:
+      tags:
+      - deanery-controller
+      operationId: registerStudent
+      parameters:
+      - name: specialityId
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StudentEntity'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/registerProfessor:
+    post:
+      tags:
+      - deanery-controller
+      operationId: registerProfessor
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProfessorEntity'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/addSubject/{idSpeciality}:
+    post:
+      tags:
+      - deanery-controller
+      operationId: addSubjectToSpeciality
+      parameters:
+      - name: idSpeciality
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubjectEntity'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/addSpeciality:
+    post:
+      tags:
+      - deanery-controller
+      operationId: addSpeciality
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SpecialityEntity'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/addGroupToSubject:
+    post:
+      tags:
+      - deanery-controller
+      operationId: addGroupToSubject
+      parameters:
+      - name: idSubject
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: idProfessor
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubjectGroupEntity'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/getSubjects/{idSpeciality}:
+    get:
+      tags:
+      - deanery-controller
+      operationId: getSubjects
+      parameters:
+      - name: idSpeciality
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/getSubjectGroup/{idSubject}:
+    get:
+      tags:
+      - deanery-controller
+      operationId: getSubjectGroup
+      parameters:
+      - name: idSubject
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/getSpecialities:
+    get:
+      tags:
+      - deanery-controller
+      operationId: getSpecialities
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /deanery/getProfessors:
+    get:
+      tags:
+      - deanery-controller
+      operationId: getProfessors
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+components:
+  schemas:
+    ClassEntity:
+      type: object
+      properties:
+        idClass:
+          type: integer
+          format: int64
+        dayOfClass:
+          type: string
+          format: date-time
+        numOfClass:
+          type: integer
+          format: int32
+        subjectGroup:
+          $ref: '#/components/schemas/SubjectGroupEntity'
+    ProfessorEntity:
+      type: object
+      properties:
+        idProfessor:
+          type: integer
+          format: int64
+        login:
+          type: string
+        password:
+          type: string
+        groups:
+          type: array
+          items:
+            $ref: '#/components/schemas/SubjectGroupEntity'
+        professorName:
+          type: string
+    SpecialityEntity:
+      type: object
+      properties:
+        idSpeciality:
+          type: integer
+          format: int64
+        specialityName:
+          type: string
+        subjects:
+          type: array
+          items:
+            $ref: '#/components/schemas/SubjectEntity'
+        students:
+          type: array
+          items:
+            $ref: '#/components/schemas/StudentEntity'
+    StudentEntity:
+      type: object
+      properties:
+        idStudent:
+          type: integer
+          format: int64
+        studentName:
+          type: string
+        course:
+          type: integer
+          format: int32
+        login:
+          type: string
+        password:
+          type: string
+        speciality:
+          $ref: '#/components/schemas/SpecialityEntity'
+    SubjectEntity:
+      type: object
+      properties:
+        idSubject:
+          type: integer
+          format: int64
+        subjectName:
+          type: string
+        course:
+          type: integer
+          format: int32
+        speciality:
+          $ref: '#/components/schemas/SpecialityEntity'
+        groups:
+          type: array
+          items:
+            $ref: '#/components/schemas/SubjectGroupEntity'
+    SubjectGroupEntity:
+      type: object
+      properties:
+        idGroup:
+          type: integer
+          format: int64
+        groupName:
+          type: string
+        professor:
+          $ref: '#/components/schemas/ProfessorEntity'
+        subject:
+          $ref: '#/components/schemas/SubjectEntity'
+        classes:
+          type: array
+          items:
+            $ref: '#/components/schemas/ClassEntity'

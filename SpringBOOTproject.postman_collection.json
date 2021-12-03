@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "781398a2-6e7b-456c-8090-f1a6a8e62642",
+		"name": "SpringBOOTproject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add speciality",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"if (pm.response.code == \"200\") {\r",
+							"    pm.test(\"Status code is 200\", function () {\r",
+							"        pm.response.to.have.status(200);\r",
+							"    });\r",
+							"    pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Speciality created\");\r",
+							"});\r",
+							"}\r",
+							"else if (pm.response.code == \"400\") {\r",
+							"    pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"    pm.test(\"Status code is 400\", function () {\r",
+							"        pm.response.to.have.status(400);\r",
+							"    });\r",
+							"    pm.test(\"Body matches string\", function () {\r",
+							"        pm.expect(pm.response.text()).to.include(\"Така спеціальність вже існує!\");\r",
+							"    });\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"specialityName\":\"IPs2dsdadsZ2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deanery/addSpeciality",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"addSpeciality"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add subject to speciality",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subjectName\":\"SpringBoots\",\r\n    \"course\":\"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deanery/addSubject/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"addSubject",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register professor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProfessorName\":\"ProfessorNumber1\",\r\n    \"login\":\"login1\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deanery/registerProfessor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"registerProfessor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Group to Subjec",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"groupName\":\"practice1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deanery/addGroupToSubject?idSubject=2&idProfessor=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"addGroupToSubject"
+					],
+					"query": [
+						{
+							"key": "idSubject",
+							"value": "2"
+						},
+						{
+							"key": "idProfessor",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentName\":\"Student1\",\r\n    \"yearOfAdmission\":\"2018\",\r\n    \"login\":\"loginstudent1\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deanery/registerStudent?specialityId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"registerStudent"
+					],
+					"query": [
+						{
+							"key": "specialityId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get speciality subjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deanery/getSubjects/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"getSubjects",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get subject(s) group",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deanery/getSubjectGroup/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"getSubjectGroup",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get professors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deanery/getProfessors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deanery",
+						"getProfessors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Subjects For Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/getSubjectsForStudent/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"getSubjectsForStudent",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/getGroups/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"getGroups",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Classes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/getClasses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"getClasses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

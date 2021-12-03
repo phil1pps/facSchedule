@@ -1,0 +1,6 @@
+2021-12-03 02:05:33 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CLASS_ENTITY[*]"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+CLASS_ENTITY [42001-200]
+2021-12-03 02:09:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT 3[*], DSFSD"; expected "INTO"; SQL statement:
+INSERT 3, dsfsd [42001-200]

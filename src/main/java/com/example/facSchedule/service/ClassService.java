@@ -22,6 +22,8 @@ public class ClassService {
     private ClassRepo classRepo;
     @Autowired
     private SubjectGroupRepo subjectGroupRepo;
+    @Autowired
+    private SubjectGroupService subjectGroupService;
 
     public ClassEntity addClass(ClassEntity Class, Long subjectGroupId) throws AlreadyExistException, NotFoundException {
         SubjectGroupEntity subjectGroup = subjectGroupRepo.findByIdGroup(subjectGroupId);

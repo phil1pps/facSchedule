@@ -20,7 +20,7 @@ public class ProfessorService {
     private ProfessorRepo professorRepo;
 
 
-    ///TODO rewrite
+    //TODO rewrite
 
     public ProfessorEntity registration (ProfessorEntity professor) throws AlreadyExistException {
         if (professorRepo.findByLogin(professor.getLogin()) != null) throw new AlreadyExistException("Професор з таким логіном вже існує");

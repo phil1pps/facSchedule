@@ -9,36 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>facSchedule</artifactId>
+	<artifactId>demo1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>facSchedule</name>
-	<description>Demo project for Spring Boot</description>
+	<name>demo1</name>
+	<description>demo1</description>
 	<properties>
 		<java.version>11</java.version>
-		<profiles>
-			<profile>
-				<id>dev</id>
-				<properties>
-					<activatedProperties>dev</activatedProperties>
-				</properties>
-				<activation>
-					<activeByDefault>true</activeByDefault>
-				</activation>
-			</profile>
-			<profile>
-				<id>prod</id>
-				<properties>
-					<activatedProperties>prod</activatedProperties>
-				</properties>
-			</profile>
-		</profiles>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.2</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -63,8 +41,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger.core.v3</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>2.1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+			<version>2.0.2</version>
 		</dependency>
 	</dependencies>
 

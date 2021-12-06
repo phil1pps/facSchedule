@@ -5,7 +5,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Professor")
-public class ProfessorEntity extends User{
+public class ProfessorEntity extends Users {
 
     private String professorName;
 /*

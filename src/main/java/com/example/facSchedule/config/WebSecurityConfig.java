@@ -19,8 +19,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .authorizeRequests()
-                .antMatchers("/", "/index", "/about","/console/**", "/css/**" , "/webjars/**").permitAll()
+                .antMatchers("/", "/index", "/about","/h2-console/**", "/css/**" , "/webjars/**").permitAll()
                 .antMatchers("/admin/**").hasAnyRole("ADMIN")
+                .antMatchers("/deanery/**").hasAnyRole("ADMIN")
                 .antMatchers("/user/**").hasAnyRole("USER")
                 .anyRequest().authenticated()
                 .and()
@@ -37,14 +38,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth)
-            throws Exception {
-        auth
-                .inMemoryAuthentication()
-                .withUser("user").password("{noop}password").roles("USER")
-                .and()
-                .withUser("admin").password("{noop}admin").roles("ADMIN");
+    @Override
+    protected void configure(AuthenticationManagerBuilder builder) throws Exception {
+        builder.jdbcAuthentication()
+                .dataSource(dataSource);
     }
 
 

@@ -10,7 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Student")
-public class StudentEntity extends User{
+public class StudentEntity extends Users {
 
     @NotBlank(message = "studentName is mandatory")
     private String studentName;

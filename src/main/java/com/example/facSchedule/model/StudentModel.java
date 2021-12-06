@@ -5,15 +5,15 @@ import com.example.facSchedule.entity.StudentEntity;
 public class StudentModel {
     private Long idStudent;
     private String studentName;
-    private Integer yearOfAdmission;
+    private Integer course;
     private String login;
 
     public static StudentModel toModel(StudentEntity studentEntity) {
         StudentModel model = new StudentModel();
         model.setIdStudent(studentEntity.getId());
         model.setStudentName(studentEntity.getStudentName());
-        model.setYearOfAdmission(studentEntity.getCourse());
-        model.setLogin(studentEntity.getLogin());
+        model.setCourse(studentEntity.getCourse());
+        model.setLogin(studentEntity.getUsername());
         return model;
     }
 
@@ -33,12 +33,12 @@ public class StudentModel {
         this.studentName = studentName;
     }
 
-    public Integer getYearOfAdmission() {
-        return yearOfAdmission;
+    public Integer getCourse() {
+        return course;
     }
 
-    public void setYearOfAdmission(Integer yearOfAdmission) {
-        this.yearOfAdmission = yearOfAdmission;
+    public void setCourse(Integer course) {
+        this.course = course;
     }
 
     public String getLogin() {

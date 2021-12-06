@@ -24,9 +24,9 @@ public class StudentService {
         return studentRepo.save(student);
     }
 
-    public StudentModel getOneById (Long idStudent){
+    public StudentEntity getOneById (Long idStudent){
         StudentEntity student = studentRepo.findById(idStudent).get();
-        return student.toModel();
+        return student;
     }
 
 

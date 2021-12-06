@@ -11,7 +11,7 @@ public class ProfessorModel {
         ProfessorModel model = new ProfessorModel();
         model.setIdProfessor(professorEntity.getId());
         model.setProfessorName(professorEntity.getProfessorName());
-        model.setLogin(professorEntity.getLogin());
+        model.setLogin(professorEntity.getUsername());
         return model;
     }
 

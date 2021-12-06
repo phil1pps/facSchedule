@@ -1,5 +1,7 @@
 package com.example.facSchedule.entity;
 
+import com.example.facSchedule.model.StudentModel;
+
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -60,6 +62,10 @@ public class StudentEntity extends User{
 
     public SpecialityEntity getSpeciality() {
         return speciality;
+    }
+
+    public StudentModel toModel() {
+        return new StudentModel();
     }
 
 }

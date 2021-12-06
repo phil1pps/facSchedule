@@ -34,8 +34,13 @@ import java.util.Map;
             return "login";
         }
 
-      /*  @GetMapping("/403")
+        @GetMapping("/main")
+        public String main() {
+            return "main";
+        }
+
+        @GetMapping("/403")
         public String error403() {
             return "/error/403";
-        }*/
+        }
     }

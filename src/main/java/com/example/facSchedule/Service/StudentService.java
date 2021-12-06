@@ -2,6 +2,7 @@ package com.example.facSchedule.Service;
 
 import com.example.facSchedule.entity.SpecialityEntity;
 import com.example.facSchedule.entity.StudentEntity;
+import com.example.facSchedule.model.StudentModel;
 import com.example.facSchedule.repo.SpecialityRepo;
 import com.example.facSchedule.repo.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +24,9 @@ public class StudentService {
         return studentRepo.save(student);
     }
 
-    public StudentEntity getOneById (Long idStudent){
+    public StudentModel getOneById (Long idStudent){
         StudentEntity student = studentRepo.findById(idStudent).get();
-        return student;
+        return student.toModel();
     }
 
 

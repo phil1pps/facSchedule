@@ -19,6 +19,12 @@ INSERT INTO "PUBLIC"."STUDENT"("COURSE","STUDENT_NAME","ID","SPECIALITY_ID")VALU
 2021-12-06 11:51:41 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (STUDENT: ""COURSE"" INTEGER)"; SQL statement:
 INSERT INTO "PUBLIC"."STUDENT"("COURSE","STUDENT_NAME","ID","SPECIALITY_ID")VALUES(?,?,?,?) [22018-200]
+2021-12-06 17:21:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USR" not found; SQL statement:
+select username, password, active from usr where username=? [42102-200]
+2021-12-06 17:21:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USR" not found; SQL statement:
+select username, password, active from usr where username=? [42102-200]
 2021-12-06 20:53:08 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (STUDENT: ""ID"" BIGINT NOT NULL)"; SQL statement:
 INSERT INTO "PUBLIC"."STUDENT"("COURSE","STUDENT_NAME","ID","SPECIALITY_ID")VALUES(?,?,?,?) [22018-200]

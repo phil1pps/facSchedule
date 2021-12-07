@@ -5,4 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface StudentRepo extends CrudRepository<StudentEntity,Long> {
 
+    StudentEntity findByUsername(String username);
 }

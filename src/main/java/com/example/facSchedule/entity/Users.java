@@ -2,6 +2,7 @@ package com.example.facSchedule.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.Set;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -16,7 +17,10 @@ public abstract class Users {
     @NotBlank(message = "password is mandatory")
     private String password;
     private boolean enabled;
-    private String role;
+    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "authorities", joinColumns = @JoinColumn(name = "username", referencedColumnName="username"))
+    @Enumerated(EnumType.STRING)
+    private Set<Role> authority;
 
     public Long getId() {
         return id;
@@ -49,12 +53,11 @@ public abstract class Users {
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
-
-    public String getRole() {
-        return role;
+    public Set<Role> getAuthority() {
+        return authority;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setRoles(Set<Role> authority) {
+        this.authority = authority;
     }
 }

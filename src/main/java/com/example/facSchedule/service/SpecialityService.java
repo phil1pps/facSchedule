@@ -1,9 +1,9 @@
-package com.example.facSchedule.Service;
+package com.example.facSchedule.service;
 
 import com.example.facSchedule.entity.SpecialityEntity;
 
 import com.example.facSchedule.exceptions.AlreadyExistException;
-import com.example.facSchedule.repo.SpecialityRepo;
+import com.example.facSchedule.repository.SpecialityRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

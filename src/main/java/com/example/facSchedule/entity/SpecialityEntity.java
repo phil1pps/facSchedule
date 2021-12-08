@@ -1,7 +1,8 @@
 package com.example.facSchedule.entity;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 @Entity
@@ -10,7 +11,7 @@ public class SpecialityEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idSpeciality;
-    @NotBlank(message = "specialityName is mandatory")
+    @NotEmpty(message = "Speciality name is mandatory")
     private String specialityName;
 
 

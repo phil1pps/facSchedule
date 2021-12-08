@@ -1,7 +1,6 @@
 package com.example.facSchedule.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 import java.util.Set;
 
 @Entity
@@ -12,9 +11,7 @@ public abstract class Users {
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
 
-    @NotBlank(message = "login is mandatory")
     private String username;
-    @NotBlank(message = "password is mandatory")
     private String password;
     private boolean enabled;
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)

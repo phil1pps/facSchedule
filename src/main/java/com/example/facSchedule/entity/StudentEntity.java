@@ -1,22 +1,21 @@
 package com.example.facSchedule.entity;
 
 import com.example.facSchedule.model.StudentModel;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
 @Table(name = "Student")
 public class StudentEntity extends Users {
 
-    @NotBlank(message = "studentName is mandatory")
+    @NotEmpty(message = "Speciality name is mandatory")
     private String studentName;
-    @NotNull
     @Min(1)
-    @Min(6)
+    @Max(6)
     private Integer course;
 
     @ManyToOne
@@ -27,7 +26,7 @@ public class StudentEntity extends Users {
     {
         "studentName":"",
         "yearOfAdmission":"",
-        "login":"",
+        "username":"",
         "password":""
     }
     additional:

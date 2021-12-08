@@ -1,6 +1,11 @@
 package com.example.facSchedule.entity;
 
+
+import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
@@ -9,7 +14,11 @@ public class SubjectEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idSubject;
+    @NotEmpty(message = "subject name is mandatory")
     private String subjectName;
+    @NotNull
+    @Min(1)
+    @Max(6)
     private Integer course;
 
     @ManyToOne

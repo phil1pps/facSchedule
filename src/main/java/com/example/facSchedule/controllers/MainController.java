@@ -2,13 +2,10 @@ package com.example.facSchedule.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import java.util.Map;
 
-    @Controller
+@Controller
     public class MainController {
 
-        //Мы могли бы расписать эти 2 маппинга отдельно, но смысла дублировать одинаковый код нет.
-        // этот метод будет слушать запросы на "/" и "/index"
         @GetMapping(value = {"/", "/index"})
         public String index() {
             return "/index";
@@ -39,6 +36,25 @@ import java.util.Map;
             return "main";
         }
 
+        @GetMapping("/deanery")
+        public String deanery() {
+            return "deanery";
+        }
+
+        @GetMapping("/getStyles")
+        public String getStyles() {
+            return "../static/css/style.css";
+        }
+
+        @GetMapping("/getAppJS")
+        public String getAppJS() {
+            return "../static/js/app.js";
+        }
+
+        @GetMapping("/getListeners")
+        public String getListeners() {
+            return "../static/js/listeners.js";
+        }
 
         @GetMapping("/403")
         public String error403() {

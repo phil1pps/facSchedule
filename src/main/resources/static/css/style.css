@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 768px;
+}
+
+.page-header {
+    color: #20765e;
+}
+
+.working-form {
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 2px solid #20765e;
+    color: #20765e;
+}
+
+.input-field {
+    padding: 5px 15px;
+}
+
+.button-form-submit {
+    padding: 5px 15px;
+    background-color: #20765e;
+    color: #fcfcfc;
+}
+
+.working-form div {
+    margin: 10px 0;
+}
+.working-form h3 {
+    margin: 5px 0;
+}
+
+form {
+    margin-bottom: 15px;
+}

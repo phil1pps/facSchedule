@@ -34,7 +34,6 @@ public class RegistrationController {
 
         student.setEnabled(true);
         student.setRoles(Collections.singleton(Role.ADMIN));
-        //student.setPassword("{noop}"+student.getPassword());
         studentRepo.save(student);
 
         return "redirect:/login";

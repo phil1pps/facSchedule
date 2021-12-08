@@ -19,10 +19,16 @@ public abstract class Users implements Serializable {
     @NotBlank(message = "password is mandatory")
     private String password;
     private boolean enabled;
-    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
-    @CollectionTable(name = "authorities", joinColumns = @JoinColumn(name = "username", referencedColumnName="username"))
+
+    @ElementCollection(targetClass = Authority.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "authorities", joinColumns =  @JoinColumn(name = "username", referencedColumnName="username"))
     @Enumerated(EnumType.STRING)
-    private Set<Role> authority;
+    private Set<Authority> authority;
+
+    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "roles", joinColumns =  @JoinColumn(name = "username", referencedColumnName="username"))
+    @Enumerated(EnumType.STRING)
+    private Set<Role> roles;
 
     public Long getId() {
         return id;
@@ -55,11 +61,20 @@ public abstract class Users implements Serializable {
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
-    public Set<Role> getAuthorities() {
+
+    public Set<Authority> getAuthorities() {
         return authority;
     }
 
-    public void setAuthorities(Set<Role> authorities) {
+    public void setAuthorities(Set<Authority> authorities) {
         this.authority = authorities;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }

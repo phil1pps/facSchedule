@@ -1,6 +1,7 @@
 package com.example.facSchedule.controllers;
 
 
+import com.example.facSchedule.entity.Authority;
 import com.example.facSchedule.entity.Role;
 import com.example.facSchedule.entity.StudentEntity;
 import com.example.facSchedule.repository.StudentRepo;
@@ -30,7 +31,8 @@ public class RegistrationController {
         }
 
         student.setEnabled(true);
-        student.setAuthorities(Collections.singleton(Role.ADMIN));
+        student.setAuthorities(Collections.singleton(Authority.ADMIN));
+        student.setRoles(Collections.singleton(Role.ADMIN));
         studentRepo.save(student);
 
         return "redirect:/login";

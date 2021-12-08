@@ -3,16 +3,13 @@ package com.example.facSchedule.controllers;
 
 import com.example.facSchedule.entity.Role;
 import com.example.facSchedule.entity.StudentEntity;
-import com.example.facSchedule.entity.Users;
-import com.example.facSchedule.repo.StudentRepo;
-import com.example.facSchedule.repo.UsersRepo;
+import com.example.facSchedule.repository.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.Collections;
-import java.util.Map;
 
 @Controller
 public class RegistrationController {

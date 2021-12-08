@@ -1,9 +1,9 @@
 package com.example.facSchedule.controllers;
 
 
-import com.example.facSchedule.Service.ProfessorService;
-import com.example.facSchedule.Service.SpecialityService;
-import com.example.facSchedule.Service.StudentService;
+import com.example.facSchedule.service.ProfessorService;
+import com.example.facSchedule.service.SpecialityService;
+import com.example.facSchedule.service.StudentService;
 import com.example.facSchedule.entity.ProfessorEntity;
 import com.example.facSchedule.entity.SpecialityEntity;
 import com.example.facSchedule.entity.StudentEntity;

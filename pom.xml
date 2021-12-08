@@ -76,6 +76,17 @@
 			<artifactId>bootstrap</artifactId>
 			<version>3.3.7</version>
 		</dependency>
+
+		<dependency>
+
+			<groupId>com.masterspringboot</groupId>
+
+			<artifactId>spring-boot-starter-banner-service</artifactId>
+
+			<version>1.0.0</version>
+
+		</dependency>
+
 	</dependencies>
 
 	<build>

@@ -1,4 +1,4 @@
-package com.example.facSchedule.repo;
+package com.example.facSchedule.repository;
 
 import com.example.facSchedule.entity.PickedGroupEntity;
 import com.example.facSchedule.entity.StudentEntity;

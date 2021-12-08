@@ -1,10 +1,9 @@
-package com.example.facSchedule.Service;
+package com.example.facSchedule.service;
 
 import com.example.facSchedule.entity.SpecialityEntity;
 import com.example.facSchedule.entity.StudentEntity;
-import com.example.facSchedule.model.StudentModel;
-import com.example.facSchedule.repo.SpecialityRepo;
-import com.example.facSchedule.repo.StudentRepo;
+import com.example.facSchedule.repository.SpecialityRepo;
+import com.example.facSchedule.repository.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

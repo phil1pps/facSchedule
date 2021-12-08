@@ -30,7 +30,7 @@ public class RegistrationController {
         }
 
         student.setEnabled(true);
-        student.setRoles(Collections.singleton(Role.ADMIN));
+        student.setAuthorities(Collections.singleton(Role.ADMIN));
         studentRepo.save(student);
 
         return "redirect:/login";

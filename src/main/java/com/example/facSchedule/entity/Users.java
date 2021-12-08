@@ -2,11 +2,13 @@ package com.example.facSchedule.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Users {
+public abstract class Users implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -53,11 +55,11 @@ public abstract class Users {
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
-    public Set<Role> getAuthority() {
+    public Set<Role> getAuthorities() {
         return authority;
     }
 
-    public void setRoles(Set<Role> authority) {
-        this.authority = authority;
+    public void setAuthorities(Set<Role> authorities) {
+        this.authority = authorities;
     }
 }

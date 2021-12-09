@@ -41,7 +41,7 @@ public class JwtFilter extends GenericFilterBean {
             logger.info(token);
         }
         catch (NoSuchElementException ex) {
-
+            logger.info("no token...");
         }
         if (token != null && jwtProvider.validateToken(token)) {
             String userLogin = jwtProvider.getLoginFromToken(token);

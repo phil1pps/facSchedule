@@ -8774,3 +8774,420 @@ java.util.NoSuchElementException: No value present
 2021-12-09 10:06:29,317 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' user.id=
 2021-12-09 10:06:29,319 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated... user.id=
 2021-12-09 10:06:29,321 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed. user.id=
+2021-12-09 10:12:11,197 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpringControllerTest using Java 11.0.13 on DESKTOP-EAMIV2F with PID 137576 (started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule) user.id=
+2021-12-09 10:12:11,198 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default user.id=
+2021-12-09 10:12:11,892 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'jwtProvider'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.facSchedule.config.JwtProvider' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} user.id=
+2021-12-09 10:12:11,896 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. user.id=
+2021-12-09 10:12:11,926 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtProvider in com.example.facSchedule.config.JwtFilter required a bean of type 'com.example.facSchedule.config.JwtProvider' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.facSchedule.config.JwtProvider' in your configuration.
+ user.id=
+2021-12-09 10:12:11,964 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpringControllerTest using Java 11.0.13 on DESKTOP-EAMIV2F with PID 137576 (started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule) user.id=
+2021-12-09 10:12:11,964 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default user.id=
+2021-12-09 10:12:12,111 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'jwtProvider'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.facSchedule.config.JwtProvider' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} user.id=
+2021-12-09 10:12:12,113 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. user.id=
+2021-12-09 10:12:12,116 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtProvider in com.example.facSchedule.config.JwtFilter required a bean of type 'com.example.facSchedule.config.JwtProvider' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.facSchedule.config.JwtProvider' in your configuration.
+ user.id=
+2021-12-09 10:12:12,119 ERROR org.springframework.test.context.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@22bac7bc] to prepare test instance [com.example.facSchedule.SpringControllerTest@3ed242a4] user.id=
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'jwtProvider'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.facSchedule.config.JwtProvider' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.facSchedule.config.JwtProvider' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 89 common frames omitted
+2021-12-09 10:14:08,082 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 127396 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule) user.id=
+2021-12-09 10:14:08,083 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod user.id=
+2021-12-09 10:14:08,137 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable user.id=
+2021-12-09 10:14:08,137 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' user.id=
+2021-12-09 10:14:08,689 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode. user.id=
+2021-12-09 10:14:08,756 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces. user.id=
+2021-12-09 10:14:09,258 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http) user.id=
+2021-12-09 10:14:09,266 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 10:14:09,266 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat] user.id=
+2021-12-09 10:14:09,267 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55] user.id=
+2021-12-09 10:14:09,340 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext user.id=
+2021-12-09 10:14:09,340 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1202 ms user.id=
+2021-12-09 10:14:09,363 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting... user.id=
+2021-12-09 10:14:09,468 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed. user.id=
+2021-12-09 10:14:09,477 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler' user.id=
+2021-12-09 10:14:09,625 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default] user.id=
+2021-12-09 10:14:09,657 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final user.id=
+2021-12-09 10:14:09,752 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} user.id=
+2021-12-09 10:14:09,822 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect user.id=
+2021-12-09 10:14:10,379 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] user.id=
+2021-12-09 10:14:10,387 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 10:14:10,653 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning user.id=
+2021-12-09 10:14:10,894 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bf3d066, org.springframework.security.web.context.SecurityContextPersistenceFilter@496ce15e, org.springframework.security.web.header.HeaderWriterFilter@75cdc88b, org.springframework.security.web.authentication.logout.LogoutFilter@3ba79506, com.example.facSchedule.config.JwtFilter@340ba5f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a70b598, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4027cd52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cd307f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33a25fcd, org.springframework.security.web.session.SessionManagementFilter@56649599, org.springframework.security.web.access.ExceptionTranslationFilter@29fc1ff8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e628860] user.id=
+2021-12-09 10:14:11,040 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index user.id=
+2021-12-09 10:14:11,167 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729 user.id=
+2021-12-09 10:14:11,185 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 10:14:11,198 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '' user.id=
+2021-12-09 10:14:11,209 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FacScheduleApplication in 3.519 seconds (JVM running for 4.237) user.id=
+2021-12-09 10:14:13,372 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet' user.id=
+2021-12-09 10:14:13,373 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet' user.id=
+2021-12-09 10:14:13,375 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms user.id=
+2021-12-09 10:14:13,388 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 10:14:13,656 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 10:14:13,662 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 10:14:13,963 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 10:14:13,963 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 10:14:13,963 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 10:14:13,963 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 10:14:20,133 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] do filter... user.id=
+2021-12-09 10:14:20,135 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] do filter... user.id=
+2021-12-09 10:14:20,173 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] do filter... user.id=
+2021-12-09 10:14:20,173 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-7] do filter... user.id=
+2021-12-09 10:14:20,174 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] do filter... user.id=
+2021-12-09 10:14:20,174 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-7] do filter... user.id=
+2021-12-09 10:14:21,351 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] do filter... user.id=
+2021-12-09 10:14:21,352 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] do filter... user.id=
+2021-12-09 10:14:21,390 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-9] do filter... user.id=
+2021-12-09 10:14:21,390 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-10] do filter... user.id=
+2021-12-09 10:14:21,391 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-9] do filter... user.id=
+2021-12-09 10:14:21,391 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-10] do filter... user.id=
+2021-12-09 10:14:24,051 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 10:14:24,052 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 10:14:24,225 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 10:14:24,226 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:14:24,315 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 10:14:24,315 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:14:24,318 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 10:14:24,318 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:14:24,364 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 10:14:24,364 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:14:24,365 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] do filter... user.id=
+2021-12-09 10:14:24,365 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:14:24,369 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] do filter... user.id=
+2021-12-09 10:14:24,370 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:14:24,371 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 10:14:24,371 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:26:42,727 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 10:26:42,729 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated... user.id=
+2021-12-09 10:26:42,731 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed. user.id=
+2021-12-09 10:27:53,711 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 141008 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule) user.id=
+2021-12-09 10:27:53,714 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod user.id=
+2021-12-09 10:27:53,756 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable user.id=
+2021-12-09 10:27:53,756 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' user.id=
+2021-12-09 10:27:54,481 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode. user.id=
+2021-12-09 10:27:54,533 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 46 ms. Found 8 JPA repository interfaces. user.id=
+2021-12-09 10:27:55,091 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http) user.id=
+2021-12-09 10:27:55,097 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 10:27:55,097 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat] user.id=
+2021-12-09 10:27:55,097 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55] user.id=
+2021-12-09 10:27:55,170 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext user.id=
+2021-12-09 10:27:55,170 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1413 ms user.id=
+2021-12-09 10:27:55,199 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting... user.id=
+2021-12-09 10:27:55,315 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed. user.id=
+2021-12-09 10:27:55,323 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler' user.id=
+2021-12-09 10:27:55,485 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default] user.id=
+2021-12-09 10:27:55,519 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final user.id=
+2021-12-09 10:27:55,626 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} user.id=
+2021-12-09 10:27:55,699 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect user.id=
+2021-12-09 10:27:56,249 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] user.id=
+2021-12-09 10:27:56,255 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 10:27:56,563 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning user.id=
+2021-12-09 10:27:56,799 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47e275d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7df45347, org.springframework.security.web.header.HeaderWriterFilter@5d159ae4, org.springframework.security.web.authentication.logout.LogoutFilter@175c9aec, com.example.facSchedule.config.JwtFilter@28ec77b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1023ba9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9b81ca3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@467f1d93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@152e7d52, org.springframework.security.web.session.SessionManagementFilter@7c90dc7b, org.springframework.security.web.access.ExceptionTranslationFilter@1a565abc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@315b2217] user.id=
+2021-12-09 10:27:56,967 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index user.id=
+2021-12-09 10:27:57,121 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729 user.id=
+2021-12-09 10:27:57,133 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 10:27:57,150 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '' user.id=
+2021-12-09 10:27:57,158 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FacScheduleApplication in 3.805 seconds (JVM running for 4.517) user.id=
+2021-12-09 10:28:12,588 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet' user.id=
+2021-12-09 10:28:12,589 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet' user.id=
+2021-12-09 10:28:12,590 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms user.id=
+2021-12-09 10:28:12,603 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 10:28:12,605 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHVkZW50IiwiZXhwIjoxNjQwMjk2ODAwfQ.UuFeillxW84NMNCc1n0Qmss5tdFxoFFEqn_5muYVtrV4z8iN60A3vJ4VKL4aBGTK4Enxt9v32byrEkazapqUVw user.id=
+2021-12-09 10:28:12,872 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 10:28:12,873 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHVkZW50IiwiZXhwIjoxNjQwMjk2ODAwfQ.UuFeillxW84NMNCc1n0Qmss5tdFxoFFEqn_5muYVtrV4z8iN60A3vJ4VKL4aBGTK4Enxt9v32byrEkazapqUVw user.id=
+2021-12-09 10:28:49,168 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 10:28:49,169 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:28:49,174 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 10:28:49,175 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:28:49,192 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 10:28:49,192 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:29:07,700 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 10:29:07,700 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:29:07,704 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 10:29:07,705 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 10:29:07,793 INFO com.example.facSchedule.LoggingAspect [http-nio-8080-exec-4] название метода: addSpeciality user.id=
+2021-12-09 10:29:07,796 INFO com.example.facSchedule.LoggingAspect [http-nio-8080-exec-4] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) выполнен за 59мс user.id=
+2021-12-09 10:30:18,119 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 10:30:18,121 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated... user.id=
+2021-12-09 10:30:18,123 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed. user.id=
+2021-12-09 10:33:17,519 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecialityRepositoryTest using Java 11.0.13 on DESKTOP-EAMIV2F with PID 140384 (started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule) user.id=
+2021-12-09 10:33:17,520 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default user.id=
+2021-12-09 10:33:17,985 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode. user.id=
+2021-12-09 10:33:18,060 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 67 ms. Found 8 JPA repository interfaces. user.id=
+2021-12-09 10:33:18,127 INFO org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor [main] Replacing 'dataSource' DataSource bean with embedded version user.id=
+2021-12-09 10:33:18,518 INFO org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory [main] Starting embedded database: url='jdbc:h2:mem:94966931-0c2e-48c3-b6ea-f1e799c88e0a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa' user.id=
+2021-12-09 10:33:18,897 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default] user.id=
+2021-12-09 10:33:18,954 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.1.Final user.id=
+2021-12-09 10:33:19,106 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} user.id=
+2021-12-09 10:33:19,217 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect user.id=
+2021-12-09 10:33:20,106 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] user.id=
+2021-12-09 10:33:20,117 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 10:33:20,742 INFO org.springframework.boot.StartupInfoLogger [main] Started SpecialityRepositoryTest in 3.676 seconds (JVM running for 4.716) user.id=
+2021-12-09 10:33:20,772 INFO org.springframework.test.context.transaction.TransactionContext [main] Began transaction (1) for test context [DefaultTestContext@3da05287 testClass = SpecialityRepositoryTest, testInstance = com.example.facSchedule.SpecialityRepositoryTest@49d3c823, testMethod = should_delete_speciality@SpecialityRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e636ea3 testClass = SpecialityRepositoryTest, locations = '{}', classes = '{class com.example.facSchedule.FacScheduleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@115667d key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@563e4951, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3eb81efb, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@c7045b9, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7e19ebf0, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@9e01d419, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7d286fb6, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7d551ec6]; rollback [true] user.id=
+2021-12-09 10:33:21,169 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@3da05287 testClass = SpecialityRepositoryTest, testInstance = com.example.facSchedule.SpecialityRepositoryTest@49d3c823, testMethod = should_delete_speciality@SpecialityRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e636ea3 testClass = SpecialityRepositoryTest, locations = '{}', classes = '{class com.example.facSchedule.FacScheduleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@115667d key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@563e4951, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3eb81efb, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@c7045b9, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7e19ebf0, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@9e01d419, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7d286fb6, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]] user.id=
+2021-12-09 10:33:21,185 INFO org.springframework.test.context.transaction.TransactionContext [main] Began transaction (1) for test context [DefaultTestContext@3da05287 testClass = SpecialityRepositoryTest, testInstance = com.example.facSchedule.SpecialityRepositoryTest@7e615c6a, testMethod = should_find_all_speciality@SpecialityRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e636ea3 testClass = SpecialityRepositoryTest, locations = '{}', classes = '{class com.example.facSchedule.FacScheduleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@115667d key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@563e4951, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3eb81efb, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@c7045b9, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7e19ebf0, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@9e01d419, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7d286fb6, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7d551ec6]; rollback [true] user.id=
+2021-12-09 10:33:21,199 INFO org.springframework.test.context.transaction.TransactionContext [main] Rolled back transaction for test: [DefaultTestContext@3da05287 testClass = SpecialityRepositoryTest, testInstance = com.example.facSchedule.SpecialityRepositoryTest@7e615c6a, testMethod = should_find_all_speciality@SpecialityRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e636ea3 testClass = SpecialityRepositoryTest, locations = '{}', classes = '{class com.example.facSchedule.FacScheduleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@115667d key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@563e4951, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3eb81efb, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@c7045b9, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7e19ebf0, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@9e01d419, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7d286fb6, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]] user.id=
+2021-12-09 10:33:21,211 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 10:56:49,082 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 134516 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule) user.id=
+2021-12-09 10:56:49,083 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod user.id=
+2021-12-09 10:56:49,119 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable user.id=
+2021-12-09 10:56:49,120 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' user.id=
+2021-12-09 10:56:49,592 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode. user.id=
+2021-12-09 10:56:49,640 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 43 ms. Found 8 JPA repository interfaces. user.id=
+2021-12-09 10:56:50,118 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http) user.id=
+2021-12-09 10:56:50,124 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 10:56:50,125 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat] user.id=
+2021-12-09 10:56:50,125 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55] user.id=
+2021-12-09 10:56:50,185 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext user.id=
+2021-12-09 10:56:50,185 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1064 ms user.id=
+2021-12-09 10:56:50,210 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting... user.id=
+2021-12-09 10:56:50,305 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed. user.id=
+2021-12-09 10:56:50,311 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler' user.id=
+2021-12-09 10:56:50,467 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default] user.id=
+2021-12-09 10:56:50,501 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final user.id=
+2021-12-09 10:56:50,597 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} user.id=
+2021-12-09 10:56:50,671 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect user.id=
+2021-12-09 10:56:51,198 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] user.id=
+2021-12-09 10:56:51,205 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 10:56:51,491 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning user.id=
+2021-12-09 10:56:51,719 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39ac4968, org.springframework.security.web.context.SecurityContextPersistenceFilter@34cd0ed4, org.springframework.security.web.header.HeaderWriterFilter@429428cf, org.springframework.security.web.authentication.logout.LogoutFilter@158fa913, com.example.facSchedule.config.JwtFilter@19c9445, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4fd6d96a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21e9a2d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a1f8e4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38257db2, org.springframework.security.web.session.SessionManagementFilter@7eb62814, org.springframework.security.web.access.ExceptionTranslationFilter@4e6c887b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3861f047] user.id=
+2021-12-09 10:56:51,868 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index user.id=
+2021-12-09 10:56:52,003 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729 user.id=
+2021-12-09 10:56:52,015 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 10:56:52,027 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '' user.id=
+2021-12-09 10:56:52,036 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FacScheduleApplication in 3.283 seconds (JVM running for 3.974) user.id=
+2021-12-09 11:18:37,112 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet' user.id=
+2021-12-09 11:18:37,112 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet' user.id=
+2021-12-09 11:18:37,113 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms user.id=
+2021-12-09 11:18:37,123 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 11:18:37,125 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:37,295 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 11:18:37,295 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:37,611 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 11:18:37,611 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 11:18:37,612 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:37,612 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:37,615 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 11:18:37,616 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:37,616 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 11:18:37,616 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,300 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 11:18:41,300 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,303 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 11:18:41,303 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,441 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] do filter... user.id=
+2021-12-09 11:18:41,442 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,579 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] do filter... user.id=
+2021-12-09 11:18:41,579 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,581 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] do filter... user.id=
+2021-12-09 11:18:41,582 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,623 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-7] do filter... user.id=
+2021-12-09 11:18:41,623 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] do filter... user.id=
+2021-12-09 11:18:41,623 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,623 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-7] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,627 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-7] do filter... user.id=
+2021-12-09 11:18:41,627 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] do filter... user.id=
+2021-12-09 11:18:41,627 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:18:41,627 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-7] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:07,112 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-10] do filter... user.id=
+2021-12-09 11:19:07,112 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-10] do filter... user.id=
+2021-12-09 11:19:07,155 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 11:19:07,155 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 11:19:07,155 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 11:19:07,155 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-2] do filter... user.id=
+2021-12-09 11:19:11,147 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 11:19:11,148 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-3] do filter... user.id=
+2021-12-09 11:19:11,229 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 11:19:11,230 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:11,297 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] do filter... user.id=
+2021-12-09 11:19:11,298 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:11,300 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] do filter... user.id=
+2021-12-09 11:19:11,300 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-5] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:11,344 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] do filter... user.id=
+2021-12-09 11:19:11,345 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:11,346 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] do filter... user.id=
+2021-12-09 11:19:11,346 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:11,349 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] do filter... user.id=
+2021-12-09 11:19:11,349 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] do filter... user.id=
+2021-12-09 11:19:11,350 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-8] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:11,350 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-6] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:19:40,504 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 11:19:40,506 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated... user.id=
+2021-12-09 11:19:40,509 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed. user.id=
+2021-12-09 11:20:37,645 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 139992 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule) user.id=
+2021-12-09 11:20:37,646 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod user.id=
+2021-12-09 11:20:37,685 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable user.id=
+2021-12-09 11:20:37,686 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' user.id=
+2021-12-09 11:20:38,166 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode. user.id=
+2021-12-09 11:20:38,214 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 42 ms. Found 8 JPA repository interfaces. user.id=
+2021-12-09 11:20:38,661 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http) user.id=
+2021-12-09 11:20:38,667 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 11:20:38,667 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat] user.id=
+2021-12-09 11:20:38,668 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55] user.id=
+2021-12-09 11:20:38,729 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext user.id=
+2021-12-09 11:20:38,730 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1044 ms user.id=
+2021-12-09 11:20:38,756 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting... user.id=
+2021-12-09 11:20:38,866 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed. user.id=
+2021-12-09 11:20:38,873 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler' user.id=
+2021-12-09 11:20:39,003 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default] user.id=
+2021-12-09 11:20:39,036 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final user.id=
+2021-12-09 11:20:39,131 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} user.id=
+2021-12-09 11:20:39,195 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect user.id=
+2021-12-09 11:20:39,695 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] user.id=
+2021-12-09 11:20:39,701 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 11:20:39,964 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning user.id=
+2021-12-09 11:20:40,183 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ec5a45d, org.springframework.security.web.context.SecurityContextPersistenceFilter@9b81ca3, org.springframework.security.web.header.HeaderWriterFilter@7c90dc7b, org.springframework.security.web.authentication.logout.LogoutFilter@7ac380a0, com.example.facSchedule.config.JwtFilter@4e3f6aa7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@596b5cbb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63af2e08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c182041, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ed7fd5c, org.springframework.security.web.session.SessionManagementFilter@7df45347, org.springframework.security.web.access.ExceptionTranslationFilter@776ae827, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50c960f] user.id=
+2021-12-09 11:20:40,342 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index user.id=
+2021-12-09 11:20:40,486 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729 user.id=
+2021-12-09 11:20:40,498 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"] user.id=
+2021-12-09 11:20:40,511 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '' user.id=
+2021-12-09 11:20:40,519 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FacScheduleApplication in 3.214 seconds (JVM running for 3.842) user.id=
+2021-12-09 11:22:08,462 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet' user.id=
+2021-12-09 11:22:08,463 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet' user.id=
+2021-12-09 11:22:08,464 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms user.id=
+2021-12-09 11:22:08,475 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 11:22:08,477 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:22:08,679 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] do filter... user.id=
+2021-12-09 11:22:08,679 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-1] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:22:08,765 INFO com.example.facSchedule.LoggingAspect [http-nio-8080-exec-1] Method name: addSpeciality user.id=
+2021-12-09 11:22:11,695 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 11:22:11,696 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:22:11,700 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] do filter... user.id=
+2021-12-09 11:22:11,700 INFO com.example.facSchedule.config.JwtFilter [http-nio-8080-exec-4] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290ZXIiLCJleHAiOjE2NDAyOTY4MDB9.xBKu4wdzkCSvK3jH8L9_uht6AXwuVaUTxwTi0A0WJ6HA8tMe5MwNI26dilEpsPr9luHd1ttX59fogzGByfnWZA user.id=
+2021-12-09 11:22:11,745 INFO com.example.facSchedule.LoggingAspect [http-nio-8080-exec-4] Method name: addSpeciality user.id=
+2021-12-09 11:22:11,748 INFO com.example.facSchedule.LoggingAspect [http-nio-8080-exec-4] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 39ms user.id=
+2021-12-09 11:46:19,646 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' user.id=
+2021-12-09 11:46:19,649 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated... user.id=
+2021-12-09 11:46:19,651 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed. user.id=

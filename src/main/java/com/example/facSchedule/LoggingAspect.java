@@ -28,13 +28,13 @@ public class LoggingAspect {
         String methodName = jp.getSignature()
                 .getName();
 
-        logger.log(Level.INFO, "название метода: " + methodName);
+        logger.log(Level.INFO, "Method name: " + methodName);
     }
 
     @AfterReturning(pointcut = "execution(public String com.example.facSchedule.service.SpecialityService.*(..))", returning = "result")
     public void logAfterReturning(JoinPoint joinPoint, Object result) {
 
-        logger.log(Level.INFO, "возвращенное значение: " + result.toString());
+        logger.log(Level.INFO, "returned value: " + result.toString());
     }
 
     @Around("@annotation(LogExecutionTime)")
@@ -45,7 +45,7 @@ public class LoggingAspect {
 
         long executionTime = System.currentTimeMillis() - start;
 
-        logger.log(Level.INFO, joinPoint.getSignature() + " выполнен за " + executionTime + "мс");
+        logger.log(Level.INFO, joinPoint.getSignature() + " executed in " + executionTime + "ms");
         return proceed;
     }
 }

@@ -26,7 +26,7 @@ public class StudentEntity extends Users {
 /*
     {
         "studentName":"",
-        "yearOfAdmission":"",
+        "course":"",
         "login":"",
         "password":""
     }
@@ -65,7 +65,7 @@ public class StudentEntity extends Users {
     }
 
     public StudentModel toModel() {
-        return new StudentModel();
+        return StudentModel.toModel(this);
     }
 
 }

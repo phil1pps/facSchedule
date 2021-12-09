@@ -5,8 +5,11 @@ import com.example.facSchedule.entity.SpecialityEntity;
 import com.example.facSchedule.entity.StudentEntity;
 import com.example.facSchedule.entity.Users;
 import com.example.facSchedule.exceptions.AlreadyExistException;
+import com.example.facSchedule.exceptions.NotFoundException;
+import com.example.facSchedule.model.StudentModel;
 import com.example.facSchedule.repository.SpecialityRepo;
 import com.example.facSchedule.repository.StudentRepo;
+import com.example.facSchedule.repository.UsersRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -22,17 +25,16 @@ public class StudentService {
     @Autowired
     private SpecialityRepo specialityRepo;
     @Autowired
-    private StudentRepo userRepo;
+    private UsersRepo userRepo;
     @Autowired
     private PasswordEncoder bCryptPasswordEncoder;
 
-    public StudentEntity registration (StudentEntity student, Long specialityId) throws AlreadyExistException {
+    public StudentEntity registration (StudentEntity student, Long specialityId) throws AlreadyExistException, NotFoundException {
         SpecialityEntity speciality = specialityRepo.findByIdSpeciality(specialityId);
+        if(speciality == null)throw new NotFoundException("No speciality");
         student.setSpeciality(speciality);
-
-        //todo speciality check
-        Users studentFromDb = userRepo.findByUsername(student.getUsername());
-        if(studentFromDb != null)
+        Users userFromBD = userRepo.findByUsername(student.getUsername());
+        if(userFromBD != null)
             throw new AlreadyExistException("This username already registered!");
 
         student.setEnabled(true);
@@ -41,9 +43,20 @@ public class StudentService {
         return studentRepo.save(student);
     }
 
-    public StudentEntity getOneById (Long idStudent){
+    public StudentEntity editStudent(Long idStudent, StudentEntity newStudent, Long specialityId) throws NotFoundException {
+        SpecialityEntity speciality = specialityRepo.findByIdSpeciality(specialityId);
+        if(speciality == null)throw new NotFoundException("No speciality with this id");
         StudentEntity student = studentRepo.findById(idStudent).get();
-        return student;
+        if(student==null)throw new NotFoundException("No student with this id");
+        student.setStudentName(newStudent.getStudentName());
+        student.setCourse(newStudent.getCourse());
+        student.setSpeciality(speciality);
+        return studentRepo.save(student);
+    }
+
+    public StudentModel getOneById (Long idStudent){
+        StudentEntity student = studentRepo.findById(idStudent).get();
+        return student.toModel();
     }
 
 

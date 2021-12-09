@@ -1,17 +1,22 @@
 package com.example.facSchedule.entity;
 
+import com.example.facSchedule.model.ProfessorModel;
+import com.example.facSchedule.model.StudentModel;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 @Entity
 @Table(name = "Professor")
 public class ProfessorEntity extends Users {
 
+    @NotBlank(message = "professorName is mandatory")
     private String professorName;
 /*
     {
         "professorName":"",
-        "login":"",
+        "username":"",
         "password":""
     }
 */
@@ -22,7 +27,6 @@ public class ProfessorEntity extends Users {
     public ProfessorEntity() {
 
     }
-
 
     public String getProfessorName() {
         return professorName;
@@ -38,6 +42,10 @@ public class ProfessorEntity extends Users {
 
     public void setGroups(List<SubjectGroupEntity> groups) {
         this.groups = groups;
+    }
+
+    public ProfessorModel toModel() {
+        return ProfessorModel.toModel(this);
     }
 
 }

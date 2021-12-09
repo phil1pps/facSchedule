@@ -1,5 +1,8 @@
 package com.example.facSchedule.entity;
 
+import com.example.facSchedule.model.StudentModel;
+import com.example.facSchedule.model.SubjectModel;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -22,7 +25,7 @@ public class SubjectEntity {
         "course":""
     }
     additional:
-        SpecialityEntity
+    SpecialityEntity
 */
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "subject")
@@ -68,5 +71,9 @@ public class SubjectEntity {
 
     public void setGroups(List<SubjectGroupEntity> groups) {
         this.groups = groups;
+    }
+
+    public SubjectModel toModel() {
+        return SubjectModel.toModel(this);
     }
 }

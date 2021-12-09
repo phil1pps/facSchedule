@@ -1,4 +1,5 @@
-package com.example.facSchedule;
+/*
+package com.example.facSchedule.utils;
 
 
 import java.util.logging.Level;
@@ -48,4 +49,4 @@ public class LoggingAspect {
         logger.log(Level.INFO, joinPoint.getSignature() + " executed in " + executionTime + "ms");
         return proceed;
     }
-}
+}*/

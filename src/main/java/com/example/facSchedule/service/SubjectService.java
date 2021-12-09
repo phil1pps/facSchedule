@@ -35,10 +35,22 @@ public class SubjectService {
         return subjectRepo.save(subject);
     }
 
-    public SubjectEntity getOneSubject(Long id) throws NotFoundException {
-        SubjectEntity subject = subjectRepo.findByIdSubject(id);
+    public SubjectModel getOneSubject(Long subjectId) throws NotFoundException {
+        SubjectEntity subject = subjectRepo.findByIdSubject(subjectId);
         if (subject == null) throw new NotFoundException("No such subject");
-        return subject;
+        return subject.toModel();
+    }
+
+    public SubjectEntity editSubject(Long subjectId, SubjectEntity newSubject) throws NotFoundException,AlreadyExistException {
+        SubjectEntity subject = subjectRepo.findByIdSubject(subjectId);
+        if (subject == null) throw new NotFoundException("No such subject");
+        SpecialityEntity speciality = subject.getSpeciality();
+        String newSubjectName = newSubject.getSubjectName();
+        if((!subject.getSubjectName().equals(newSubjectName)) &&
+                (subjectRepo.countAllBySubjectNameAndSpeciality(newSubjectName,speciality)!=0)) throw new AlreadyExistException("Subject with this name already exist on this speciality!");
+        subject.setSubjectName(newSubjectName);
+        subject.setCourse(newSubject.getCourse());
+        return subjectRepo.save(subject);
     }
 
     public Long delete(Long id) {

@@ -1,5 +1,8 @@
 package com.example.facSchedule.entity;
 
+import com.example.facSchedule.model.SpecialityModel;
+import com.example.facSchedule.model.SubjectModel;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.List;
@@ -18,8 +21,6 @@ public class SpecialityEntity {
     {
         "specialityName":""
     }
-     additional:
-        DeaneryEntity
 */
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "speciality")
@@ -63,6 +64,10 @@ public class SpecialityEntity {
 
     public void setStudents(List<StudentEntity> students) {
         this.students = students;
+    }
+
+    public SpecialityModel toModel() {
+        return SpecialityModel.toModel(this);
     }
 }
 

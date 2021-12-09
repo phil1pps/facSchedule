@@ -1,21 +1,49 @@
 package com.example.facSchedule.service;
 
+import com.example.facSchedule.entity.Authority;
 import com.example.facSchedule.entity.ProfessorEntity;
+import com.example.facSchedule.entity.StudentEntity;
+import com.example.facSchedule.entity.Users;
 import com.example.facSchedule.exceptions.AlreadyExistException;
+import com.example.facSchedule.exceptions.NotFoundException;
+import com.example.facSchedule.model.ProfessorModel;
 import com.example.facSchedule.repository.ProfessorRepo;
+import com.example.facSchedule.repository.StudentRepo;
+import com.example.facSchedule.repository.UsersRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Collections;
 
 @Service
 public class ProfessorService {
 
     @Autowired
     private ProfessorRepo professorRepo;
-
-
+    @Autowired
+    private PasswordEncoder bCryptPasswordEncoder;
+    @Autowired
+    private UsersRepo userRepo;
     ///TODO rewrite
 
     public ProfessorEntity registration (ProfessorEntity professor) throws AlreadyExistException {
+
+        Users userFromBD = userRepo.findByUsername(professor.getUsername());
+        if(userFromBD != null)
+            throw new AlreadyExistException("This username already registered!");
+
+        professor.setEnabled(true);
+        professor.setPassword(bCryptPasswordEncoder.encode(professor.getPassword()));
+        professor.setAuthorities(Collections.singleton(Authority.ROLE_PROFESSOR));
+
+        return professorRepo.save(professor);
+    }
+
+    public ProfessorEntity editProfessor(Long idProfessor, ProfessorEntity newProfessor) throws NotFoundException {
+        ProfessorEntity professor = professorRepo.findById(idProfessor).get();
+        if(professor==null)throw new NotFoundException("No professor with this id");
+        professor.setProfessorName(newProfessor.getProfessorName());
         return professorRepo.save(professor);
     }
 
@@ -24,9 +52,10 @@ public class ProfessorService {
         return id;
     }
 
-    public ProfessorEntity getOneById (Long idProfessor){
+    public ProfessorModel getOneById (Long idProfessor) throws NotFoundException {
         ProfessorEntity professor = professorRepo.findById(idProfessor).get();
-        return professor;
+        if(professor==null)throw new NotFoundException("No professor with this id");
+        return professor.toModel();
     }
 
    /* public List<ProfessorModel> getAllProfessors() throws NotFoundException {

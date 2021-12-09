@@ -1,16 +1,11 @@
 package com.example.facSchedule.service;
 
 import com.example.facSchedule.entity.ClassEntity;
-import com.example.facSchedule.entity.ProfessorEntity;
-import com.example.facSchedule.entity.SubjectEntity;
 import com.example.facSchedule.entity.SubjectGroupEntity;
 import com.example.facSchedule.exceptions.AlreadyExistException;
 import com.example.facSchedule.exceptions.NotFoundException;
 import com.example.facSchedule.repository.ClassRepo;
-import com.example.facSchedule.repository.ProfessorRepo;
 import com.example.facSchedule.repository.SubjectGroupRepo;
-import com.example.facSchedule.repository.SubjectRepo;
-import org.aspectj.lang.annotation.Around;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +30,7 @@ public class ClassService {
         Class.setSubjectGroup(subjectGroup);
         return classRepo.save(Class);
     }
+
 
     public Long delete(Long id) {
         classRepo.deleteById(id);

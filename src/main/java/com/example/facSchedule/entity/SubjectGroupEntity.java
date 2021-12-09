@@ -1,5 +1,8 @@
 package com.example.facSchedule.entity;
 
+import com.example.facSchedule.model.StudentModel;
+import com.example.facSchedule.model.SubjectGroupModel;
+
 import java.util.List;
 import javax.persistence.*;
 
@@ -74,5 +77,9 @@ public class SubjectGroupEntity {
 
     public void setClasses(List<ClassEntity> classes) {
         this.classes = classes;
+    }
+
+    public SubjectGroupModel toModel() {
+        return SubjectGroupModel.toModel(this);
     }
 }

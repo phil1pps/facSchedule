@@ -10,4 +10,5 @@ public interface SubjectGroupRepo extends CrudRepository<SubjectGroupEntity, Lon
     SubjectGroupEntity findByGroupName(String groupName);
     SubjectGroupEntity findByGroupNameAndSubject(String groupName, SubjectEntity subjectEntity);
     Iterable<SubjectGroupEntity> findAllBySubject(SubjectEntity subject);
+    long countAllByGroupNameAndSubject(String groupName, SubjectEntity subjectEntity);
 }

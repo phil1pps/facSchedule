@@ -8,4 +8,6 @@ public interface SpecialityRepo extends CrudRepository<SpecialityEntity, Long>
 {
     SpecialityEntity findBySpecialityName(String specialityName);
     SpecialityEntity findByIdSpeciality(Long idSpeciality);
+
+    long countAllBySpecialityName(String specialityName);
 }

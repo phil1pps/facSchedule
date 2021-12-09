@@ -42,7 +42,16 @@ public class SubjectGroupService {
         return subjectGroupRepo.save(subjectGroup);
     }
 
-    public List<SubjectGroupModel> getSubjectGroup(Long idSubject) throws NotFoundException {
+    public SubjectGroupEntity editSubjectGroup(Long idGroup, SubjectGroupEntity newSubjectGroup) throws AlreadyExistException, NotFoundException {
+        SubjectGroupEntity subjectGroup = subjectGroupRepo.findByIdGroup(idGroup);
+        if(subjectGroup==null) throw new NotFoundException("No such group with this id!");
+        String newSubjectGroupName = newSubjectGroup.getGroupName();
+        if(subjectGroupRepo.countAllByGroupNameAndSubject(newSubjectGroupName,subjectGroup.getSubject())!=0) throw new AlreadyExistException("Group with this name for this subject already exist!");
+        subjectGroup.setGroupName(newSubjectGroupName);
+        return subjectGroupRepo.save(subjectGroup);
+    }
+
+    public List<SubjectGroupModel> getSubjectGroups(Long idSubject) throws NotFoundException {
         SubjectEntity subject = subjectRepo.findByIdSubject(idSubject);
         if (subject == null) throw new NotFoundException("No such subject!");
 
@@ -56,13 +65,11 @@ public class SubjectGroupService {
     }
 
 
-   /* public StudentEntity getOne(String login) throws NotFoundException {
-        StudentEntity student = studentRepo.findByLogin(login);
-        if (student == null) {
-            throw new UserNotFoundException("Пользователь не найден");
-        }
-        return student;
-    }*/
+    public SubjectGroupModel getOneSubjectGroup(Long idGroup) throws NotFoundException {
+        SubjectGroupEntity subjectGroup = subjectGroupRepo.findByIdGroup(idGroup);
+        if(subjectGroup==null) throw new NotFoundException("No such subject!");
+        return subjectGroup.toModel();
+    }
 
     public Long delete(Long id) {
         subjectGroupRepo.deleteById(id);

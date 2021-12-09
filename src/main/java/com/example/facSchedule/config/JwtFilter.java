@@ -40,6 +40,9 @@ public class JwtFilter extends GenericFilterBean {
             token = readServletCookie((HttpServletRequest) servletRequest).get();
             logger.info(token);
         }
+        catch (NullPointerException ex) {
+            logger.info("no token...");
+        }
         catch (NoSuchElementException ex) {
             logger.info("no token...");
         }

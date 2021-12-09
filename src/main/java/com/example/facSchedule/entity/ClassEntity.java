@@ -1,6 +1,9 @@
 package com.example.facSchedule.entity;
 
 import javax.persistence.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 
 
@@ -37,8 +40,8 @@ public class ClassEntity {
         return dayOfClass;
     }
 
-    public void setDayOfClass(Date dayOfClass) {
-        this.dayOfClass = dayOfClass;
+    public void setDayOfClass(String dayOfClass) throws ParseException {
+        this.dayOfClass = new SimpleDateFormat( "yyyyMMdd" ).parse( dayOfClass );
     }
 
     public Integer getNumOfClass() {

@@ -9,3 +9,35 @@ h2{
 footer{
     margin-top:60px;
 }
+
+.deanery-user-interface {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.crud-screen {
+    width: 64%;
+    min-height: 330px;
+}
+.university-tree {
+    width: 34%;
+    min-height: 330px;
+}
+.university-tree ul {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    list-style: none;
+}
+.university-tree li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    list-style: none;
+}
+
+#choosed-list-item {
+    color: #9b0606;
+    text-shadow:0 0 1px rgba(197, 0, 0, 0.88);
+}
+.specialities-professors-ul {
+    padding: 15px;
+}

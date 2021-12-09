@@ -1,6 +1,8 @@
 
+/*
 
 if (window.sessionStorage.token) { xhr.setRequestHeader("Authorization", $window.sessionStorage.token); }
+*/
 
 let Http = new XMLHttpRequest();
 let url='http://localhost:8080/deanery/getSpecialities';

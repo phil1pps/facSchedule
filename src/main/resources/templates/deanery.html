@@ -4,18 +4,103 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
-    <script type="module" th:src="@{/js/app.js}"></script>
-    <script type="module" th:src="@{/js/listeners.js}"></script>
+    <script type="module" th:src="@{/js/deanery.js}"></script>
+<!--    <script type="module" th:src="@{/js/listeners.js}"></script>-->
     <script type="module" th:src="@{/js/templates.js}"></script>
+    <div th:replace="fragments/header :: header-css"></div>
 </head>
 <body>
+<div th:replace="fragments/header :: header"></div>
 <div class="container">
-    <header class="page-header">
-        <h1>
-            FACULTY.SCHEDULER
-        </h1>
-    </header>
+        <h3>
+            DEANERY CONTROLLER UI
+        </h3>
 
+    <section class="deanery-user-interface">
+        <div class="university-tree grey-block">
+            <header class="dark-grey-header">
+                FACULTY TREE
+            </header>
+            <div class="all-items-list">
+
+                <ul class="specialities-professors-ul">
+                    <li class="professors"> Professors
+                        <ul class="professors-ul">
+                            <li id="choosed-list-item" class="professors-list-item">
+                                Glybovets
+                            </li>
+                            <li class="professors-list-item">
+                                Yaremko
+                            </li>
+                            <li class="professors-list-item">
+                                Bublik
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="specialities"> Specialities
+                        <ul class="specialities-ul">
+                            <li class="speciality-list-item">
+                                IPZ
+                                    <li class="students-list-item">
+                                        Students
+                                        <ul class="students-ul">
+                                            <li class="students-list-item">
+                                                Student 1
+                                            </li>
+                                            <li class="students-list-item">
+                                                Student 2
+                                            </li>
+                                            <li class="students-list-item">
+                                                Student 3
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="subjects-list-item">
+                                        Subjects
+                                        <ul class="subjects-ul">
+                                            <li class="subjects-list-item">
+                                                Subject 1
+                                            </li>
+                                            <li class="subjects-list-item">
+                                                Subject 2
+                                            </li>
+                                            <li class="subjects-list-item">
+                                                Groups
+                                                <ul class="group-subjects-ul">
+                                                <li class="group-subjects-list-item">
+                                                    SubjectGroup 1
+                                                </li>
+                                                <li class="group-subjects-list-item">
+                                                    SubjectGroup 2
+                                                </li>
+                                                <li class="group-subjects-list-item">
+                                                    SubjectGroup 3
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="speciality-list-item">
+                                Computer Science
+                            </li>
+                            <li class="speciality-list-item">
+                                IPZ3
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="crud-screen grey-block">
+            <header class="dark-grey-header">
+                CRUD SCREEN
+            </header>
+        </div>
+    </section>
+<!--
     <section class="section-page">
         <form class="working-form">
             <h3> Add subject to speciality </h3>
@@ -96,9 +181,9 @@
             <h3> Add group to subject </h3>
             <div>
                 <label>Choose a speciality:
-                <br>
-                <select class="specialities specialities-pick-group input-field"  name="specialities">
-                </select>
+                    <br>
+                    <select class="specialities specialities-pick-group input-field"  name="specialities">
+                    </select>
                 </label>
             </div>
             <div>
@@ -123,11 +208,9 @@
             </div>
         </form>
 
-    </section>
+    </section>-->
 
-    <footer class="page-footer">
-
-    </footer>
+    <div th:replace="fragments/footer :: footer"></div>
 
 </div>
 

@@ -32,6 +32,15 @@ public class DeaneryController {
         }
     }
 
+    @GetMapping("/getSpecialities")
+    public ResponseEntity getSpecialities() {
+        try {
+            return ResponseEntity.ok(specialityService.getAllSpeciality());
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
     @PostMapping("/registerStudent")
     public ResponseEntity registerStudent(@RequestBody StudentEntity student, @RequestParam Long specialityId) {
         try {

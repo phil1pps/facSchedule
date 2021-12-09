@@ -39,5 +39,6 @@ public class ProfessorEntity extends Users {
     public void setGroups(List<SubjectGroupEntity> groups) {
         this.groups = groups;
     }
+
 }
 

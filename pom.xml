@@ -17,6 +17,11 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
@@ -72,20 +77,16 @@
 			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>3.3.7</version>
 		</dependency>
 
-		<dependency>
-
-			<groupId>com.masterspringboot</groupId>
-
-			<artifactId>spring-boot-starter-banner-service</artifactId>
-
-			<version>1.0.0</version>
-
-		</dependency>
 
 	</dependencies>
 

@@ -1,5 +1,5 @@
 package com.example.facSchedule.entity;
 
 public enum Authority {
-    USER, STUDENT,PROFESSOR,ADMIN;
+    ROLE_STUDENT,ROLE_PROFESSOR,ROLE_ADMIN;
 }

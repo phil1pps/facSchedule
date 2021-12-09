@@ -3,6 +3,7 @@ package com.example.facSchedule.entity;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,10 +26,6 @@ public abstract class Users implements Serializable {
     @Enumerated(EnumType.STRING)
     private Set<Authority> authority;
 
-    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
-    @CollectionTable(name = "roles", joinColumns =  @JoinColumn(name = "username", referencedColumnName="username"))
-    @Enumerated(EnumType.STRING)
-    private Set<Role> roles;
 
     public Long getId() {
         return id;
@@ -70,11 +67,7 @@ public abstract class Users implements Serializable {
         this.authority = authorities;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public String getRole() {
+        return "ADMIN";
     }
 }

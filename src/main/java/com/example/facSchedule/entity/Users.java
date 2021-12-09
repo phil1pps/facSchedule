@@ -68,6 +68,10 @@ public abstract class Users implements Serializable {
     }
 
     public String getRole() {
-        return "ADMIN";
+        if (authority.toString().contains("ADMIN"))
+            return "ADMIN";
+        if (authority.toString().contains("STUDENT"))
+            return "STUDENT";
+        else return "USER";
     }
 }

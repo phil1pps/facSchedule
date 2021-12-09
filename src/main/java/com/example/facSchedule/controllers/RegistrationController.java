@@ -35,7 +35,7 @@ public class RegistrationController {
 
         student.setEnabled(true);
         student.setPassword(bCryptPasswordEncoder.encode(student.getPassword()));
-        student.setAuthorities(Collections.singleton(Authority.ROLE_ADMIN));
+        student.setAuthorities(Collections.singleton(Authority.ROLE_STUDENT));
         studentRepo.save(student);
 
         return "redirect:/login";

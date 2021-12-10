@@ -44,6 +44,10 @@ public class ClassEntity {
         this.dayOfClass = new SimpleDateFormat( "yyyyMMdd" ).parse( dayOfClass );
     }
 
+    public void setDayOfClass(Date dayOfClass) {
+        this.dayOfClass = dayOfClass;
+    }
+
     public Integer getNumOfClass() {
         return numOfClass;
     }

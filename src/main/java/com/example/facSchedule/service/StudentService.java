@@ -74,6 +74,11 @@ public class StudentService {
         return student.toModel();
     }
 
+    public Long delete(Long id) {
+        studentRepo.deleteById(id);
+        return id;
+    }
+
 
 }
 

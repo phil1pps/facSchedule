@@ -1,9 +1,11 @@
 package com.example.facSchedule.service;
 
-import com.example.facSchedule.entity.ProfessorEntity;
-import com.example.facSchedule.entity.SpecialityEntity;
-import com.example.facSchedule.entity.SubjectEntity;
-import com.example.facSchedule.entity.SubjectGroupEntity;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import com.example.facSchedule.entity.*;
 import com.example.facSchedule.exceptions.AlreadyExistException;
 import com.example.facSchedule.exceptions.NotFoundException;
 import com.example.facSchedule.model.SubjectGroupModel;
@@ -31,7 +33,33 @@ public class SubjectGroupService {
     @Autowired
     private SubjectRepo subjectRepo;
 
+    @Autowired
+    private ClassService classService;
 
+    private Date plusWeek(Date cur){
+        int noOfDays = 7; //i.e weeks
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(cur);
+        calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+        return calendar.getTime();
+    }
+
+    public void generateSchedule(String dateOfStart) throws ParseException, NotFoundException, AlreadyExistException {
+        Date dateStart = new SimpleDateFormat( "yyyyMMdd" ).parse( dateOfStart );
+        List<SubjectGroupModel> list =  StreamSupport.stream(subjectGroupRepo.findAll().spliterator(), false).map(SubjectGroupModel::toModel).collect(Collectors.toList());
+        int countNumOfClass = 1;
+        for(int i = 0; i<list.size(); i++){
+            Date dayOfClass = dateStart;
+            if(i>6 && i%6==0) countNumOfClass++;
+            for(int week = 0; week<14; week++){
+                ClassEntity classE = new ClassEntity();
+                classE.setDayOfClass(dayOfClass);
+                classE.setNumOfClass(countNumOfClass);
+                classService.addClass(classE,list.get(i).getIdGroup());
+                dayOfClass = plusWeek(dayOfClass);
+            }
+        }
+    }
 
     public SubjectGroupEntity addGroupToSubject(SubjectGroupEntity subjectGroup, Long idSubject, Long idProfessor) throws AlreadyExistException, NotFoundException {
         ProfessorEntity professor = professorRepo.findById(idProfessor).get();

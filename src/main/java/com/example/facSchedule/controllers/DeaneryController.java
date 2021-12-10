@@ -1,6 +1,5 @@
 package com.example.facSchedule.controllers;
 
-
 import com.example.facSchedule.entity.*;
 import com.example.facSchedule.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,6 +54,15 @@ public class DeaneryController {
         }
     }
 
+    @DeleteMapping("/deleteSpeciality/{specialityId}")
+    public ResponseEntity deleteSpeciality(@PathVariable Long specialityId){
+        try {
+            specialityService.delete(specialityId);
+            return ResponseEntity.ok("Speciality deleted");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 
 
     //TODO Student add edit getOne getAll(by speciality)
@@ -97,6 +105,15 @@ public class DeaneryController {
         }
     }
 
+    @DeleteMapping("/deleteStudent/{studentId}")
+    public ResponseEntity deleteStudent(@PathVariable Long studentId){
+        try {
+            studentService.delete(studentId);
+            return ResponseEntity.ok("Student deleted");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 
 
     //TODO Professor add edit getOne
@@ -138,6 +155,15 @@ public class DeaneryController {
         }
     }
 
+    @DeleteMapping("/deleteProfessor/{idProfessor}")
+    public ResponseEntity deleteProfessor(@PathVariable Long idProfessor){
+        try {
+            professorService.delete(idProfessor);
+            return ResponseEntity.ok("Professor deleted");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 
 
     //TODO Subject add edit getOne getAll(by speciality)
@@ -179,7 +205,15 @@ public class DeaneryController {
         }
     }
 
-
+    @DeleteMapping("/deleteSubject/{idSubject}")
+    public ResponseEntity deleteSubject(@PathVariable Long idSubject){
+        try {
+            subjectService.delete(idSubject);
+            return ResponseEntity.ok("Subject deleted");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 
 
     //TODO SubjectGroup add edit getOne getAll(by Subject)
@@ -217,6 +251,26 @@ public class DeaneryController {
         try {
             return ResponseEntity.ok(subjectGroupService.getOneSubjectGroup(subjectGroupId));
         }catch (Exception e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @PostMapping("/generateSchedule/{dateOfStart}")
+    public ResponseEntity editSubjectGroup(@PathVariable String dateOfStart){
+        try {
+            subjectGroupService.generateSchedule(dateOfStart);
+            return ResponseEntity.ok("Schedule generated");
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @DeleteMapping("/deleteSubjectGroup/{idSubjectGroup}")
+    public ResponseEntity deleteSubjectGroup(@PathVariable Long idSubjectGroup){
+        try {
+            subjectGroupService.delete(idSubjectGroup);
+            return ResponseEntity.ok("Group deleted");
+        } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }

@@ -78,6 +78,7 @@ public class DeaneryController {
         }
     }
 
+    ///
     @GetMapping("/getStudentsFromSpeciality/{specialityId}")
     public ResponseEntity getStudentsFromSpeciality(@PathVariable Long specialityId) {
         try {

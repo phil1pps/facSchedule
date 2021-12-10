@@ -6,6 +6,7 @@ import com.example.facSchedule.entity.StudentEntity;
 import com.example.facSchedule.entity.Users;
 import com.example.facSchedule.exceptions.AlreadyExistException;
 import com.example.facSchedule.exceptions.NotFoundException;
+import com.example.facSchedule.model.SpecialityModel;
 import com.example.facSchedule.model.StudentModel;
 import com.example.facSchedule.repository.SpecialityRepo;
 import com.example.facSchedule.repository.StudentRepo;
@@ -15,6 +16,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 
 @Service
@@ -52,6 +56,17 @@ public class StudentService {
         student.setCourse(newStudent.getCourse());
         student.setSpeciality(speciality);
         return studentRepo.save(student);
+    }
+
+    public List<StudentModel> getStudentsFromSpeciality(Long specialityId) throws NotFoundException {
+        SpecialityEntity speciality = specialityRepo.findByIdSpeciality(specialityId);
+        if(speciality == null) throw new NotFoundException("No speciality with this id");
+        List<StudentModel> list =  StreamSupport.stream(studentRepo.findAllBySpeciality(speciality).spliterator(), false).map(StudentModel::toModel)
+                .collect(Collectors.toList());
+        if (list.isEmpty()) {
+            throw new NotFoundException("No specialities!");
+        }
+        return list;
     }
 
     public StudentModel getOneById (Long idStudent){

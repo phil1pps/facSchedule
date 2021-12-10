@@ -31,6 +31,8 @@ public class SubjectGroupService {
     @Autowired
     private SubjectRepo subjectRepo;
 
+
+
     public SubjectGroupEntity addGroupToSubject(SubjectGroupEntity subjectGroup, Long idSubject, Long idProfessor) throws AlreadyExistException, NotFoundException {
         ProfessorEntity professor = professorRepo.findById(idProfessor).get();
         SubjectEntity subject = subjectRepo.findByIdSubject(idSubject);

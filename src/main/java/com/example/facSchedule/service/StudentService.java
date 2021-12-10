@@ -6,8 +6,10 @@ import com.example.facSchedule.entity.StudentEntity;
 import com.example.facSchedule.entity.Users;
 import com.example.facSchedule.exceptions.AlreadyExistException;
 import com.example.facSchedule.exceptions.NotFoundException;
+import com.example.facSchedule.model.ClassModel;
 import com.example.facSchedule.model.SpecialityModel;
 import com.example.facSchedule.model.StudentModel;
+import com.example.facSchedule.model.SubjectGroupModel;
 import com.example.facSchedule.repository.SpecialityRepo;
 import com.example.facSchedule.repository.StudentRepo;
 import com.example.facSchedule.repository.UsersRepo;
@@ -15,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -31,7 +34,11 @@ public class StudentService {
     @Autowired
     private UsersRepo userRepo;
     @Autowired
+    private ClassService classService;
+    @Autowired
     private PasswordEncoder bCryptPasswordEncoder;
+    @Autowired
+    private PickedGroupService pickedGroupService;
 
     public StudentEntity registration (StudentEntity student, Long specialityId) throws AlreadyExistException, NotFoundException {
         SpecialityEntity speciality = specialityRepo.findByIdSpeciality(specialityId);
@@ -45,6 +52,17 @@ public class StudentService {
         student.setPassword(bCryptPasswordEncoder.encode(student.getPassword()));
         student.setAuthorities(Collections.singleton(Authority.ROLE_STUDENT));
         return studentRepo.save(student);
+    }
+
+    public List<ClassModel> getClassesForStudent(Long studentId) throws NotFoundException {
+        List<ClassModel> result = new ArrayList<>();
+        List<SubjectGroupModel> groups = pickedGroupService.getGroups(studentId);
+        for(SubjectGroupModel sgm : groups){
+            for(ClassModel cm :classService.getClassesForGroup(sgm.getIdGroup())){
+                result.add(cm);
+            }
+        }
+        return result;
     }
 
     public StudentEntity editStudent(Long idStudent, StudentEntity newStudent, Long specialityId) throws NotFoundException {

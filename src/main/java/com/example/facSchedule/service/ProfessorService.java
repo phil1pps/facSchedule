@@ -15,6 +15,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 public class ProfessorService {
@@ -25,7 +28,6 @@ public class ProfessorService {
     private PasswordEncoder bCryptPasswordEncoder;
     @Autowired
     private UsersRepo userRepo;
-    ///TODO rewrite
 
     public ProfessorEntity registration (ProfessorEntity professor) throws AlreadyExistException {
 
@@ -58,14 +60,14 @@ public class ProfessorService {
         return professor.toModel();
     }
 
-   /* public List<ProfessorModel> getAllProfessors() throws NotFoundException {
+    public List<ProfessorModel> getAllProfessors() throws NotFoundException {
         List<ProfessorModel> list =  StreamSupport.stream(professorRepo.findAll().spliterator(), false).map(ProfessorModel::toModel)
                 .collect(Collectors.toList());
         if (list.isEmpty()) {
             throw new NotFoundException("No professors!");
         }
         return list;
-    }*/
+    }
 
 
 }

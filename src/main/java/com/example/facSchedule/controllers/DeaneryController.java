@@ -57,7 +57,7 @@ public class DeaneryController {
 
 
 
-    //TODO Student add edit getOne
+    //TODO Student add edit getOne getAll(by speciality)
     @PostMapping("/registerStudent")
     public ResponseEntity registerStudent(@RequestBody StudentEntity student, @RequestParam Long specialityId) {
         try {
@@ -74,6 +74,16 @@ public class DeaneryController {
             studentService.editStudent(studentId ,student , specialityId);
             return ResponseEntity.ok("Student edited");
         } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    ///
+    @GetMapping("/getStudentsFromSpeciality/{specialityId}")
+    public ResponseEntity getStudentsFromSpeciality(@PathVariable Long specialityId) {
+        try {
+            return ResponseEntity.ok(studentService.getStudentsFromSpeciality(specialityId));
+        }catch (Exception e){
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
@@ -114,6 +124,15 @@ public class DeaneryController {
     public ResponseEntity getOneProfessorById(@PathVariable Long idProfessor) {
         try {
             return ResponseEntity.ok(professorService.getOneById(idProfessor));
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @GetMapping("/getAllProfessors")
+    public ResponseEntity getAllProfessors() {
+        try {
+            return ResponseEntity.ok(professorService.getAllProfessors());
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e.getMessage());
         }

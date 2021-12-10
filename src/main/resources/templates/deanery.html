@@ -26,7 +26,7 @@
                 <ul class="specialities-professors-ul">
                     <li class="professors"> Professors
                         <ul class="professors-ul">
-                            <li id="choosed-list-item" class="professors-list-item">
+                            <li class="professors-list-item">
                                 Glybovets
                             </li>
                             <li class="professors-list-item">
@@ -98,117 +98,49 @@
             <header class="dark-grey-header">
                 CRUD SCREEN
             </header>
+            <div id="crud">
+                <form class="working-form speciality-edit" style="display:none;">
+                    <h3> Edit speciality </h3>
+                    <div>
+                        <label> Speciality Name: <br>
+                            <input class="speciality-name-input input-field" type="text">
+                        </label>
+                    </div>
+
+                    <div>
+                        <button class="button-form-submit-speciality-edit button-form-submit" type="button"> CREATE </button>
+                    </div>
+                </form>
+                <form class="working-form subject-edit" style="display:none;">
+                    <h3> Edit subject </h3>
+                    <div>
+                        <label> Subject Name: <br>
+                            <input class="name-input input-field" type="text">
+                        </label>
+                    </div>
+                    <div>
+                        <label> Subject Course: <br>
+                            <input class="course-input input-field" type="number"  min="1" max="6">
+                        </label>
+                    </div>
+                    <div>
+                        <button class="button-form-submit-subject button-form-submit" type="button"> CREATE </button>
+                    </div>
+                </form>
+                <!--<form class="working-form add-professor-crud">
+                    <h3> Edit professor </h3>
+                    <div>
+                        <label> Professor name: <br>
+                            <input class="professor-name-input input-field" type="text">
+                        </label>
+                    </div>
+                    <div>
+                        <button class="button-form-submit-professor button-form-submit" type="button"> ADD </button>
+                    </div>
+                </form>-->
+            </div>
         </div>
     </section>
-<!--
-    <section class="section-page">
-        <form class="working-form">
-            <h3> Add subject to speciality </h3>
-            <div>
-                <label>Choose a speciality:
-                    <br>
-                    <select class="specialities input-field" name="specialities">
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label> Subject Name: <br>
-                    <input class="name-input input-field" type="text">
-                </label>
-            </div>
-            <div>
-                <label> Subject Course: <br>
-                    <input class="course-input input-field" type="number"  min="1" max="6">
-                </label>
-            </div>
-            <div>
-                <button class="button-form-submit-subject button-form-submit" type="button"> CREATE </button>
-            </div>
-        </form>
-
-        <form class="working-form">
-            <h3> Add student </h3>
-            <div>
-                <label> Student name: <br>
-                    <input class="student-name-input input-field" type="text">
-                </label>
-            </div>
-            <div>
-                <label>Choose student speciality:
-                    <br>
-                    <select id="student-speciality" class="specialities input-field" name="specialities">
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label> Student login: <br>
-                    <input class="student-login-input input-field" type="text">
-                </label>
-            </div>
-            <div>
-                <label> Student password: <br>
-                    <input class="student-password-input input-field" type="password">
-                </label>
-            </div>
-            <div>
-                <button class="button-form-submit-student button-form-submit" type="button"> ADD </button>
-            </div>
-        </form>
-
-        <form class="working-form">
-            <h3> Add professor </h3>
-            <div>
-                <label> Professor name: <br>
-                    <input class="professor-name-input input-field" type="text">
-                </label>
-            </div>
-            <div>
-                <label> Professor login: <br>
-                    <input class="professor-login-input input-field" type="text">
-                </label>
-            </div>
-            <div>
-                <label> Professor password: <br>
-                    <input class="professor-password-input input-field" type="password">
-                </label>
-            </div>
-            <div>
-                <button class="button-form-submit-professor button-form-submit" type="button"> ADD </button>
-            </div>
-        </form>
-
-        <form class="working-form">
-            <h3> Add group to subject </h3>
-            <div>
-                <label>Choose a speciality:
-                    <br>
-                    <select class="specialities specialities-pick-group input-field"  name="specialities">
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label> Choose a subject: <br>
-                    <select class="subjects-list input-field" name="subjects-list">
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label> Choose a professor: <br>
-                    <select class="professor-list input-field" name="professor-list">
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label> Create group with name: <br>
-                    <input class="group-name-input input-field" type="text">
-                </label>
-            </div>
-            <div>
-                <button class="button-form-submit-group button-form-submit" type="button"> CREATE </button>
-            </div>
-        </form>
-
-    </section>-->
 
     <div th:replace="fragments/footer :: footer"></div>
 

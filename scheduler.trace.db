@@ -1,0 +1,12 @@
+2021-12-10 07:45:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+DELETE FROM CUSTOMERS WHERE USERNAME= 'root' & AUTHORITY ='ROLE_STUDENT' [42102-200]
+2021-12-10 07:45:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTHORITY" not found; SQL statement:
+DELETE FROM AUTHORITY WHERE USERNAME= 'root' & AUTHORITY ='ROLE_STUDENT' [42102-200]
+2021-12-10 07:45:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE FROM AUTHORITIES WHERE USERNAME= 'root'[*] & AUTHORITY ='ROLE_STUDENT'"; SQL statement:
+DELETE FROM AUTHORITIES WHERE USERNAME= 'root' & AUTHORITY ='ROLE_STUDENT' [42000-200]
+2021-12-10 07:47:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AUTHORITY" not found; SQL statement:
+INSERT INTO AUTHORITY VALUES ('root','ROLE_ADMIN') [42102-200]

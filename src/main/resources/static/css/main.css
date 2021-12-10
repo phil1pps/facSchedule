@@ -27,17 +27,35 @@ footer{
     padding-top: 3px;
     padding-bottom: 3px;
     list-style: none;
+    color: #111;
+    text-shadow:0 0 0;
 }
 .university-tree li {
     padding-top: 3px;
     padding-bottom: 3px;
     list-style: none;
+    color: #111;
+    text-shadow:0 0 0;
 }
 
-#choosed-list-item {
-    color: #9b0606;
-    text-shadow:0 0 1px rgba(197, 0, 0, 0.88);
+.choosed-list-item-clicked-speciality {
+    color: #9b0606 !important;
+    text-shadow:0 0 1px rgba(197, 0, 0, 0.88) !important;
 }
+.choosed-list-item-clicked-student{
+    color: #9b0606 !important;
+    text-shadow:0 0 1px rgba(197, 0, 0, 0.88) !important;
+}
+.choosed-list-item-clicked-subject {
+    color: #9b0606 !important;
+    text-shadow:0 0 1px rgba(197, 0, 0, 0.88) !important;
+}
+
+
 .specialities-professors-ul {
+    padding: 15px;
+}
+
+#crud {
     padding: 15px;
 }

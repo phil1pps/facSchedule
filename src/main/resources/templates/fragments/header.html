@@ -1,4 +1,4 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
     <head th:fragment="header-css">
         <!-- this is header-css -->
         <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -15,9 +15,9 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a th:href="@{/}">Home</a></li>
-                    <li><a th:href="@{/admin}">Admin</a></li>
-                    <li><a th:href="@{/user}">User</a></li>
+                    <li> <a th:href="@{/}">Home</a></li>
+                    <li sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/deanery}">DeaneryUI</a></li>
+                    <li sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/deaneryAdd}">DeaneryAdd</a></li>
                 </ul>
             </div>
             </div>

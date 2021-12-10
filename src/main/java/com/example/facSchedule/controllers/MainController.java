@@ -46,6 +46,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
             return "deanery";
         }
 
+        @GetMapping("/deaneryAdd")
+        public String deaneryAdd() {
+            return "deaneryAdd";
+        }
+
         @GetMapping("/getStyles")
         public String getStyles() {
             return "../static/css/style.css";

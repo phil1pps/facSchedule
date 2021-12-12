@@ -1,0 +1,197 @@
+CustomLayout:: 647 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 22844 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomLayout:: 650 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: dev
+CustomLayout:: 699 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 700 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1448 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1516 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 2147 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 2154 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 2155 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 2156 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 2228 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 2232 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1531 ms
+CustomLayout:: 2268 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 2361 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 2368 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomLayout:: 2524 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2558 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2664 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2742 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 3280 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 3288 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3634 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 4170 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a99ef6d, org.springframework.security.web.context.SecurityContextPersistenceFilter@650f098e, org.springframework.security.web.header.HeaderWriterFilter@71e2c2aa, org.springframework.security.web.authentication.logout.LogoutFilter@568c01bb, com.example.facSchedule.config.security.JwtFilter@38d696f6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d2f213, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f4de3cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e0b8e31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56513dbd, org.springframework.security.web.session.SessionManagementFilter@6c89344, org.springframework.security.web.access.ExceptionTranslationFilter@72cca0dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@514d0fe1]
+CustomLayout:: 4438 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 4457 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 4488 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 4498 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomLayout:: 4501 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 4.183 seconds (JVM running for 5.016)
+CustomLayout:: 9499 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 14511 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 19512 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 24506 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 29513 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 34499 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 39508 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 44505 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 45474 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 45477 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+CustomLayout:: 45479 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+CustomLayout:: 613 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 10384 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomLayout:: 615 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: dev
+CustomLayout:: 659 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 659 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1153 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1209 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 1793 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 1799 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 1800 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 1800 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 1865 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 1866 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1206 ms
+CustomLayout:: 1900 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 1992 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 1999 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomLayout:: 2147 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2179 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2274 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2346 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 2842 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 2848 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3138 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 3587 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@630593a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@68c1d689, org.springframework.security.web.header.HeaderWriterFilter@23d3755e, org.springframework.security.web.authentication.logout.LogoutFilter@7c42175d, com.example.facSchedule.config.security.JwtFilter@76a09b08, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2265d267, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f68c02e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e30d4b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@541a19e9, org.springframework.security.web.session.SessionManagementFilter@12fede1e, org.springframework.security.web.access.ExceptionTranslationFilter@2d0aaa7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68f2bbd0]
+CustomLayout:: 3848 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 3862 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 3892 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 3901 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Investing money because you want to become financially independent! <*>
+CustomLayout:: 3904 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 3.621 seconds (JVM running for 4.603)
+CustomLayout:: 8913 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 13912 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 18906 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 23913 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 27576 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 27579 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+CustomLayout:: 27581 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+CustomLayout:: 653 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 21632 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomLayout:: 656 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: dev
+CustomLayout:: 722 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 723 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1235 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1291 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 1870 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 1876 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 1877 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 1878 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 1941 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 1941 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1218 ms
+CustomLayout:: 1975 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 2061 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 2068 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomLayout:: 2222 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2254 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2344 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2415 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 2899 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 2905 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3175 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 3630 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27632be2, org.springframework.security.web.context.SecurityContextPersistenceFilter@876e744, org.springframework.security.web.header.HeaderWriterFilter@5d054481, org.springframework.security.web.authentication.logout.LogoutFilter@89c1c0b, com.example.facSchedule.config.security.JwtFilter@231cc252, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25df29de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@502de1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@330bf0bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@528526c2, org.springframework.security.web.session.SessionManagementFilter@31956178, org.springframework.security.web.access.ExceptionTranslationFilter@2bc15c05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29057504]
+CustomLayout:: 3890 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 3906 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 3932 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 3942 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomLayout:: 3945 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 3.617 seconds (JVM running for 4.733)
+CustomLayout:: 8944 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 13944 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 18948 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 23949 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 28946 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 33943 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 38950 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 43948 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 45947 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 45950 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+CustomLayout:: 45952 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+CustomLayout:: 544 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 22988 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomLayout:: 549 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: dev
+CustomLayout:: 598 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 600 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1091 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1146 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 1720 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 1726 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 1727 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 1727 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 1794 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 1795 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1194 ms
+CustomLayout:: 1831 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 1916 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 1924 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomLayout:: 2072 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2103 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2195 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2268 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 2755 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 2761 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3049 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 3492 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5195107d, org.springframework.security.web.context.SecurityContextPersistenceFilter@12fede1e, org.springframework.security.web.header.HeaderWriterFilter@3a8ce2d3, org.springframework.security.web.authentication.logout.LogoutFilter@417486c5, com.example.facSchedule.config.security.JwtFilter@61c24154, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@778fb39b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68c1d689, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f57f0e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76982601, org.springframework.security.web.session.SessionManagementFilter@23d3755e, org.springframework.security.web.access.ExceptionTranslationFilter@10dbd718, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58508874]
+CustomLayout:: 3756 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 3772 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 3796 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 3805 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomLayout:: 3807 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 3.535 seconds (JVM running for 4.153)
+CustomLayout:: 8810 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 10636 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomLayout:: 10636 INFO [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+CustomLayout:: 10638 INFO [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+CustomLayout:: 10647 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 10648 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 10653 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 10654 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 10859 INFO [http-nio-8080-exec-2] com.example.facSchedule.utils.LoggingAspect - Method name: addSpeciality
+CustomLayout:: 10860 INFO [http-nio-8080-exec-2] com.example.facSchedule.utils.LoggingAspect - SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 129ms
+CustomLayout:: 13288 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13288 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 13289 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13290 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 13294 INFO [http-nio-8080-exec-3] com.example.facSchedule.utils.LoggingAspect - Method name: addSpeciality
+CustomLayout:: 13294 INFO [http-nio-8080-exec-3] com.example.facSchedule.utils.LoggingAspect - SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 3ms
+CustomLayout:: 13809 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 17365 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 17366 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 17366 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 17367 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 17371 INFO [http-nio-8080-exec-4] com.example.facSchedule.utils.LoggingAspect - Method name: addSpeciality
+CustomLayout:: 17373 INFO [http-nio-8080-exec-4] com.example.facSchedule.utils.LoggingAspect - SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 5ms
+CustomLayout:: 18811 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 19253 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 19254 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 19254 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 19255 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 19257 INFO [http-nio-8080-exec-5] com.example.facSchedule.utils.LoggingAspect - Method name: addSpeciality
+CustomLayout:: 19257 INFO [http-nio-8080-exec-5] com.example.facSchedule.utils.LoggingAspect - SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 1ms
+CustomLayout:: 22502 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 22503 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 22504 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 22505 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 22509 INFO [http-nio-8080-exec-6] com.example.facSchedule.utils.LoggingAspect - Method name: addSpeciality
+CustomLayout:: 22510 INFO [http-nio-8080-exec-6] com.example.facSchedule.utils.LoggingAspect - SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 3ms
+CustomLayout:: 23810 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 24769 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 24769 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 24770 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 24770 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 24774 INFO [http-nio-8080-exec-7] com.example.facSchedule.utils.LoggingAspect - Method name: addSpeciality
+CustomLayout:: 24775 INFO [http-nio-8080-exec-7] com.example.facSchedule.utils.LoggingAspect - SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 3ms
+CustomLayout:: 26313 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 26314 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 26315 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 26315 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - no token...
+CustomLayout:: 26331 INFO [http-nio-8080-exec-8] com.example.facSchedule.utils.LoggingAspect - Method name: getAllSpeciality
+CustomLayout:: 26331 INFO [http-nio-8080-exec-8] com.example.facSchedule.utils.LoggingAspect - List com.example.facSchedule.service.SpecialityService.getAllSpeciality() executed in 14ms
+CustomLayout:: 28807 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 33813 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 38810 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 43810 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 44631 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 44633 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+CustomLayout:: 44635 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

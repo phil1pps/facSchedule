@@ -1,4 +1,4 @@
-package com.example.facSchedule.config;
+package com.example.facSchedule.config.security;
 
 import com.example.facSchedule.entity.Users;
 import com.example.facSchedule.repository.UsersRepo;

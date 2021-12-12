@@ -13,17 +13,18 @@ import com.example.facSchedule.model.SubjectGroupModel;
 import com.example.facSchedule.repository.SpecialityRepo;
 import com.example.facSchedule.repository.StudentRepo;
 import com.example.facSchedule.repository.UsersRepo;
+import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-
+@Log
 @Service
 public class StudentService {
 
@@ -54,6 +55,12 @@ public class StudentService {
         return studentRepo.save(student);
     }
 
+    public void transferStudentToNextYear(Long idStudent){
+        StudentEntity student = studentRepo.findById(idStudent).get();
+        student.setCourse(student.getCourse()+1);
+        log.info("Student with id:"+idStudent+" was transferred to the course");
+    }
+
     public List<ClassModel> getClassesForStudent(Long studentId) throws NotFoundException {
         List<ClassModel> result = new ArrayList<>();
         List<SubjectGroupModel> groups = pickedGroupService.getGroups(studentId);
@@ -63,6 +70,22 @@ public class StudentService {
             }
         }
         return result;
+    }
+
+    public List<ClassModel> getClassesForWeekForStudent(Long studentId) throws NotFoundException, ParseException {
+        List<ClassModel> allClasses = getClassesForStudent(studentId);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+        Date today = new SimpleDateFormat( "yyyyMMdd" ).parse( dateFormat.format(new Date()));
+        List<ClassModel> result = allClasses.stream().filter(i -> i.getDayOfClass().compareTo(today)>=0 && i.getDayOfClass().compareTo(addNextWeekDay(today))<=0).collect(Collectors.toList());
+        return result;
+    }
+
+
+    private Date addNextWeekDay(Date today){
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(today);
+        cal.add(Calendar.DATE, 7);
+        return cal.getTime();
     }
 
     public StudentEntity editStudent(Long idStudent, StudentEntity newStudent, Long specialityId) throws NotFoundException {

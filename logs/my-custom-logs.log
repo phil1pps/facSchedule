@@ -1,0 +1,197 @@
+CustomAppender: 1639340446220 [INFO] Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 22844 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomAppender: 1639340446221 [INFO] The following profiles are active: dev
+CustomAppender: 1639340446270 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639340446271 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639340447020 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639340447087 [INFO] Finished Spring Data repository scanning in 58 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639340447719 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639340447726 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639340447726 [INFO] Starting service [Tomcat]
+CustomAppender: 1639340447727 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639340447802 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639340447803 [INFO] Root WebApplicationContext: initialization completed in 1531 ms
+CustomAppender: 1639340447840 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639340447932 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639340447940 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomAppender: 1639340448096 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639340448130 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639340448237 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639340448313 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639340448851 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639340448859 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639340449206 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639340449741 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a99ef6d, org.springframework.security.web.context.SecurityContextPersistenceFilter@650f098e, org.springframework.security.web.header.HeaderWriterFilter@71e2c2aa, org.springframework.security.web.authentication.logout.LogoutFilter@568c01bb, com.example.facSchedule.config.security.JwtFilter@38d696f6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d2f213, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f4de3cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e0b8e31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56513dbd, org.springframework.security.web.session.SessionManagementFilter@6c89344, org.springframework.security.web.access.ExceptionTranslationFilter@72cca0dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@514d0fe1]
+CustomAppender: 1639340450010 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639340450028 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639340450060 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639340450070 [INFO] Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomAppender: 1639340450073 [INFO] Started FacScheduleApplication in 4.183 seconds (JVM running for 5.016)
+CustomAppender: 1639340455071 [INFO] Cache cleaned
+CustomAppender: 1639340460082 [INFO] Cache cleaned
+CustomAppender: 1639340465083 [INFO] Cache cleaned
+CustomAppender: 1639340470077 [INFO] Cache cleaned
+CustomAppender: 1639340475084 [INFO] Cache cleaned
+CustomAppender: 1639340480070 [INFO] Cache cleaned
+CustomAppender: 1639340485079 [INFO] Cache cleaned
+CustomAppender: 1639340490076 [INFO] Cache cleaned
+CustomAppender: 1639340491046 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639340491049 [INFO] HikariPool-1 - Shutdown initiated...
+CustomAppender: 1639340491050 [INFO] HikariPool-1 - Shutdown completed.
+CustomAppender: 1639340494865 [INFO] Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 10384 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomAppender: 1639340494866 [INFO] The following profiles are active: dev
+CustomAppender: 1639340494909 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639340494910 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639340495404 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639340495459 [INFO] Finished Spring Data repository scanning in 49 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639340496043 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639340496050 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639340496050 [INFO] Starting service [Tomcat]
+CustomAppender: 1639340496050 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639340496116 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639340496116 [INFO] Root WebApplicationContext: initialization completed in 1206 ms
+CustomAppender: 1639340496151 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639340496242 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639340496250 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomAppender: 1639340496398 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639340496429 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639340496525 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639340496596 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639340497093 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639340497099 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639340497389 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639340497837 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@630593a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@68c1d689, org.springframework.security.web.header.HeaderWriterFilter@23d3755e, org.springframework.security.web.authentication.logout.LogoutFilter@7c42175d, com.example.facSchedule.config.security.JwtFilter@76a09b08, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2265d267, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f68c02e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e30d4b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@541a19e9, org.springframework.security.web.session.SessionManagementFilter@12fede1e, org.springframework.security.web.access.ExceptionTranslationFilter@2d0aaa7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68f2bbd0]
+CustomAppender: 1639340498098 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639340498113 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639340498142 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639340498151 [INFO] Some motivation for log reader:) <*> Investing money because you want to become financially independent! <*>
+CustomAppender: 1639340498154 [INFO] Started FacScheduleApplication in 3.621 seconds (JVM running for 4.603)
+CustomAppender: 1639340503164 [INFO] Cache cleaned
+CustomAppender: 1639340508162 [INFO] Cache cleaned
+CustomAppender: 1639340513156 [INFO] Cache cleaned
+CustomAppender: 1639340518163 [INFO] Cache cleaned
+CustomAppender: 1639340521827 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639340521830 [INFO] HikariPool-1 - Shutdown initiated...
+CustomAppender: 1639340521832 [INFO] HikariPool-1 - Shutdown completed.
+CustomAppender: 1639340525278 [INFO] Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 21632 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomAppender: 1639340525279 [INFO] The following profiles are active: dev
+CustomAppender: 1639340525344 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639340525345 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639340525858 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639340525913 [INFO] Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639340526492 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639340526499 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639340526499 [INFO] Starting service [Tomcat]
+CustomAppender: 1639340526500 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639340526563 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639340526564 [INFO] Root WebApplicationContext: initialization completed in 1218 ms
+CustomAppender: 1639340526598 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639340526684 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639340526690 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomAppender: 1639340526845 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639340526876 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639340526966 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639340527037 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639340527521 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639340527528 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639340527797 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639340528252 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27632be2, org.springframework.security.web.context.SecurityContextPersistenceFilter@876e744, org.springframework.security.web.header.HeaderWriterFilter@5d054481, org.springframework.security.web.authentication.logout.LogoutFilter@89c1c0b, com.example.facSchedule.config.security.JwtFilter@231cc252, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25df29de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@502de1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@330bf0bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@528526c2, org.springframework.security.web.session.SessionManagementFilter@31956178, org.springframework.security.web.access.ExceptionTranslationFilter@2bc15c05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29057504]
+CustomAppender: 1639340528513 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639340528529 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639340528554 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639340528564 [INFO] Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomAppender: 1639340528567 [INFO] Started FacScheduleApplication in 3.617 seconds (JVM running for 4.733)
+CustomAppender: 1639340533566 [INFO] Cache cleaned
+CustomAppender: 1639340538566 [INFO] Cache cleaned
+CustomAppender: 1639340543570 [INFO] Cache cleaned
+CustomAppender: 1639340548571 [INFO] Cache cleaned
+CustomAppender: 1639340553568 [INFO] Cache cleaned
+CustomAppender: 1639340558565 [INFO] Cache cleaned
+CustomAppender: 1639340563572 [INFO] Cache cleaned
+CustomAppender: 1639340568570 [INFO] Cache cleaned
+CustomAppender: 1639340570570 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639340570572 [INFO] HikariPool-1 - Shutdown initiated...
+CustomAppender: 1639340570574 [INFO] HikariPool-1 - Shutdown completed.
+CustomAppender: 1639341319884 [INFO] Starting FacScheduleApplication using Java 16.0.1 on DESKTOP-HR9TRD1 with PID 22988 (C:\Users\Vlad Kovryzhenko\Desktop\facSchedule\target\classes started by Vlad Kovryzhenko in C:\Users\Vlad Kovryzhenko\Desktop\facSchedule)
+CustomAppender: 1639341319885 [INFO] The following profiles are active: dev
+CustomAppender: 1639341319934 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639341319936 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639341320427 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639341320482 [INFO] Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639341321056 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639341321063 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639341321063 [INFO] Starting service [Tomcat]
+CustomAppender: 1639341321063 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639341321131 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639341321132 [INFO] Root WebApplicationContext: initialization completed in 1194 ms
+CustomAppender: 1639341321168 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639341321253 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639341321260 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+CustomAppender: 1639341321408 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639341321440 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639341321531 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639341321605 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639341322091 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639341322098 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639341322386 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639341322828 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5195107d, org.springframework.security.web.context.SecurityContextPersistenceFilter@12fede1e, org.springframework.security.web.header.HeaderWriterFilter@3a8ce2d3, org.springframework.security.web.authentication.logout.LogoutFilter@417486c5, com.example.facSchedule.config.security.JwtFilter@61c24154, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@778fb39b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68c1d689, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f57f0e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76982601, org.springframework.security.web.session.SessionManagementFilter@23d3755e, org.springframework.security.web.access.ExceptionTranslationFilter@10dbd718, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58508874]
+CustomAppender: 1639341323092 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639341323108 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639341323132 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639341323141 [INFO] Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomAppender: 1639341323144 [INFO] Started FacScheduleApplication in 3.535 seconds (JVM running for 4.153)
+CustomAppender: 1639341328146 [INFO] Cache cleaned
+CustomAppender: 1639341329972 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomAppender: 1639341329972 [INFO] Initializing Servlet 'dispatcherServlet'
+CustomAppender: 1639341329975 [INFO] Completed initialization in 1 ms
+CustomAppender: 1639341329983 [INFO] do filter...
+CustomAppender: 1639341329984 [INFO] no token...
+CustomAppender: 1639341329989 [INFO] do filter...
+CustomAppender: 1639341329990 [INFO] no token...
+CustomAppender: 1639341330195 [INFO] Method name: addSpeciality
+CustomAppender: 1639341330196 [INFO] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 129ms
+CustomAppender: 1639341332624 [INFO] do filter...
+CustomAppender: 1639341332625 [INFO] no token...
+CustomAppender: 1639341332625 [INFO] do filter...
+CustomAppender: 1639341332626 [INFO] no token...
+CustomAppender: 1639341332630 [INFO] Method name: addSpeciality
+CustomAppender: 1639341332631 [INFO] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 3ms
+CustomAppender: 1639341333145 [INFO] Cache cleaned
+CustomAppender: 1639341336701 [INFO] do filter...
+CustomAppender: 1639341336702 [INFO] no token...
+CustomAppender: 1639341336703 [INFO] do filter...
+CustomAppender: 1639341336703 [INFO] no token...
+CustomAppender: 1639341336708 [INFO] Method name: addSpeciality
+CustomAppender: 1639341336709 [INFO] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 5ms
+CustomAppender: 1639341338147 [INFO] Cache cleaned
+CustomAppender: 1639341338590 [INFO] do filter...
+CustomAppender: 1639341338590 [INFO] no token...
+CustomAppender: 1639341338591 [INFO] do filter...
+CustomAppender: 1639341338591 [INFO] no token...
+CustomAppender: 1639341338593 [INFO] Method name: addSpeciality
+CustomAppender: 1639341338593 [INFO] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 1ms
+CustomAppender: 1639341341839 [INFO] do filter...
+CustomAppender: 1639341341839 [INFO] no token...
+CustomAppender: 1639341341840 [INFO] do filter...
+CustomAppender: 1639341341842 [INFO] no token...
+CustomAppender: 1639341341846 [INFO] Method name: addSpeciality
+CustomAppender: 1639341341846 [INFO] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 3ms
+CustomAppender: 1639341343146 [INFO] Cache cleaned
+CustomAppender: 1639341344105 [INFO] do filter...
+CustomAppender: 1639341344106 [INFO] no token...
+CustomAppender: 1639341344106 [INFO] do filter...
+CustomAppender: 1639341344107 [INFO] no token...
+CustomAppender: 1639341344110 [INFO] Method name: addSpeciality
+CustomAppender: 1639341344111 [INFO] SpecialityEntity com.example.facSchedule.service.SpecialityService.addSpeciality(SpecialityEntity) executed in 3ms
+CustomAppender: 1639341345650 [INFO] do filter...
+CustomAppender: 1639341345651 [INFO] no token...
+CustomAppender: 1639341345651 [INFO] do filter...
+CustomAppender: 1639341345652 [INFO] no token...
+CustomAppender: 1639341345667 [INFO] Method name: getAllSpeciality
+CustomAppender: 1639341345667 [INFO] List com.example.facSchedule.service.SpecialityService.getAllSpeciality() executed in 14ms
+CustomAppender: 1639341348143 [INFO] Cache cleaned
+CustomAppender: 1639341353149 [INFO] Cache cleaned
+CustomAppender: 1639341358146 [INFO] Cache cleaned
+CustomAppender: 1639341363146 [INFO] Cache cleaned
+CustomAppender: 1639341363967 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639341363969 [INFO] HikariPool-1 - Shutdown initiated...
+CustomAppender: 1639341363971 [INFO] HikariPool-1 - Shutdown completed.

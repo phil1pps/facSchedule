@@ -32,6 +32,7 @@ public class SpecialityEntity {
     }
 
     public SpecialityEntity(String specialityName) {
+        this.specialityName = specialityName;
     }
 
     public Long getIdSpeciality() {

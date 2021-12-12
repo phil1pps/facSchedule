@@ -34,4 +34,13 @@ public class StudentController {
         }
     }
 
+    @GetMapping("/getAllWeekClasses/{idStudent}")
+    public ResponseEntity getAllWeekClasses(@PathVariable Long idStudent) {
+        try {
+            return ResponseEntity.ok(studentService.getClassesForWeekForStudent(idStudent));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
 }

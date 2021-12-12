@@ -51,7 +51,7 @@ public class SubjectGroupService {
         for(int i = 0; i<list.size(); i++){
             Date dayOfClass = dateStart;
             if(i>6 && i%6==0) countNumOfClass++;
-            for(int week = 0; week<14; week++){
+            for(int week = 0; week<17; week++){
                 ClassEntity classE = new ClassEntity();
                 classE.setDayOfClass(dayOfClass);
                 classE.setNumOfClass(countNumOfClass);

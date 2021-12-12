@@ -256,7 +256,7 @@ public class DeaneryController {
     }
 
     @PostMapping("/generateSchedule/{dateOfStart}")
-    public ResponseEntity editSubjectGroup(@PathVariable String dateOfStart){
+    public ResponseEntity generateSchedule(@PathVariable String dateOfStart){
         try {
             subjectGroupService.generateSchedule(dateOfStart);
             return ResponseEntity.ok("Schedule generated");

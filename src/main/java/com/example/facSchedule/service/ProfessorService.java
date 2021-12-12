@@ -1,12 +1,11 @@
 package com.example.facSchedule.service;
 
-import com.example.facSchedule.entity.Authority;
-import com.example.facSchedule.entity.ProfessorEntity;
-import com.example.facSchedule.entity.StudentEntity;
-import com.example.facSchedule.entity.Users;
+import com.example.facSchedule.entity.*;
 import com.example.facSchedule.exceptions.AlreadyExistException;
 import com.example.facSchedule.exceptions.NotFoundException;
+import com.example.facSchedule.model.ClassModel;
 import com.example.facSchedule.model.ProfessorModel;
+import com.example.facSchedule.model.SubjectGroupModel;
 import com.example.facSchedule.repository.ProfessorRepo;
 import com.example.facSchedule.repository.StudentRepo;
 import com.example.facSchedule.repository.UsersRepo;
@@ -14,8 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -52,6 +52,30 @@ public class ProfessorService {
     public Long delete(Long id) {
         professorRepo.deleteById(id);
         return id;
+    }
+
+    public List<ClassModel> getClassesForProfessor(Long idProfessor) throws NotFoundException {
+        List<ClassModel> result = new ArrayList<>();
+        ProfessorEntity professor = professorRepo.findById(idProfessor).get();
+        for(SubjectGroupEntity sge : professor.getGroups()){
+            result.addAll(sge.getClasses().stream().map(ClassModel::toModel).collect(Collectors.toList()));
+        }
+        return result;
+    }
+
+    public List<ClassModel> getClassesForWeekForProfessor(Long idProfessor) throws NotFoundException, ParseException {
+        List<ClassModel> allClasses = getClassesForProfessor(idProfessor);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+        Date today = new SimpleDateFormat( "yyyyMMdd" ).parse( dateFormat.format(new Date()));
+        List<ClassModel> result = allClasses.stream().filter(i -> i.getDayOfClass().compareTo(today)>=0 && i.getDayOfClass().compareTo(addNextWeekDay(today))<=0).collect(Collectors.toList());
+        return result;
+    }
+
+    private Date addNextWeekDay(Date today){
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(today);
+        cal.add(Calendar.DATE, 7);
+        return cal.getTime();
     }
 
     public ProfessorModel getOneById (Long idProfessor) throws NotFoundException {

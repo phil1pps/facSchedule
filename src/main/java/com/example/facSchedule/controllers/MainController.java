@@ -26,6 +26,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
             return "/user";
         }
 
+        @GetMapping("/schedule")
+        public String schedule() {
+            return "/schedule";
+        }
+
         @GetMapping("/about")
         public String about() {
             return "/about";

@@ -47,3 +47,22 @@ form {
     padding: 15px 0;
     color:#FFFFFF;
 }
+
+.schedule-day{
+    padding: 15px;
+    margin: 3px 0;
+    background-color: rgba(40, 238, 6, 0.08);
+    border: 2px solid rgba(40, 238, 6, 0.34);
+    min-width: 200px;
+}
+.schedule-day div {
+    padding: 10px;
+    margin: 1px 0;
+    background-color: rgba(40, 238, 6, 0.08);
+    border: 1px solid rgba(40, 238, 6, 0.34);
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: flex-start;
+}

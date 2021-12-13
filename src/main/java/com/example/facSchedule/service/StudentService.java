@@ -80,12 +80,44 @@ public class StudentService {
         return result;
     }
 
+    public String getClassesForDay(Long studentId, int numOfDay) throws NotFoundException, ParseException {
+        List<ClassModel> allClasses = getClassesForStudent(studentId);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+        Date today = new SimpleDateFormat( "yyyyMMdd" ).parse( dateFormat.format(new Date()));
+        List<ClassModel> result = allClasses.stream().filter(i -> i.getDayOfClass().compareTo(addToDay(today,numOfDay))==0).collect(Collectors.toList());
 
-    private Date addNextWeekDay(Date today){
+        ArrayList<String> finalRes = new ArrayList<>();
+        for (ClassModel cm : result) {
+            String adds = "";
+            if(cm.getNumOfClass()==1)adds="*8:30-9:50*";
+            else if (cm.getNumOfClass()==2)adds="*10:00-11:20*";
+            else if (cm.getNumOfClass()==3)adds="*11:40-13:00*";
+            else if (cm.getNumOfClass()==4)adds="*13:30-14:50*";
+            else if (cm.getNumOfClass()==5)adds="*15:00-16:20*";
+            else if (cm.getNumOfClass()==6)adds="*16:30-17:50*";
+            else if (cm.getNumOfClass()==7)adds="*18:00-19:20*";
+            finalRes.add( adds +" subject:" + cm.getSubjectName() + " group:" +  cm.getGroupName() +'\n');
+        }
+        finalRes.stream().sorted().collect(Collectors.toList());
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(addToDay(today,numOfDay).toString().substring(0,10)+'\n');
+        for (String cm : finalRes) {
+            sb.append(cm);
+        }
+
+        return sb.toString();
+    }
+
+    private Date addToDay(Date today, int dayToAdd){
         Calendar cal = Calendar.getInstance();
         cal.setTime(today);
-        cal.add(Calendar.DATE, 7);
+        cal.add(Calendar.DATE, dayToAdd);
         return cal.getTime();
+    }
+
+    private Date addNextWeekDay(Date today){
+        return addToDay(today,7);
     }
 
     public StudentEntity editStudent(Long idStudent, StudentEntity newStudent, Long specialityId) throws NotFoundException {

@@ -26,7 +26,6 @@ public abstract class Users implements Serializable {
     @Enumerated(EnumType.STRING)
     private Set<Authority> authority;
 
-
     public Long getId() {
         return id;
     }
@@ -74,4 +73,5 @@ public abstract class Users implements Serializable {
             return "STUDENT";
         else return "USER";
     }
+
 }

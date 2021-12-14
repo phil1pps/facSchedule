@@ -1,4 +1,4 @@
-package com.example.facSchedule.config;
+package com.example.facSchedule.config.security;
 
 
 import io.jsonwebtoken.Claims;

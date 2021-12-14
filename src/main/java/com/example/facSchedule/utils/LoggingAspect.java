@@ -1,14 +1,9 @@
-/*
 package com.example.facSchedule.utils;
 
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import lombok.extern.java.Log;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
@@ -16,9 +11,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
+@Log
 public class LoggingAspect {
-
-    private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 
     @Pointcut("within(com.example.facSchedule.service.SpecialityService)")
     public void stringProcessingMethods() {
@@ -29,13 +23,7 @@ public class LoggingAspect {
         String methodName = jp.getSignature()
                 .getName();
 
-        logger.log(Level.INFO, "Method name: " + methodName);
-    }
-
-    @AfterReturning(pointcut = "execution(public String com.example.facSchedule.service.SpecialityService.*(..))", returning = "result")
-    public void logAfterReturning(JoinPoint joinPoint, Object result) {
-
-        logger.log(Level.INFO, "returned value: " + result.toString());
+        log.info("Method name: " + methodName);
     }
 
     @Around("@annotation(LogExecutionTime)")
@@ -46,7 +34,7 @@ public class LoggingAspect {
 
         long executionTime = System.currentTimeMillis() - start;
 
-        logger.log(Level.INFO, joinPoint.getSignature() + " executed in " + executionTime + "ms");
+        log.info(joinPoint.getSignature() + " executed in " + executionTime + "ms");
         return proceed;
     }
-}*/
+}

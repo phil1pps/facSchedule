@@ -4,12 +4,16 @@
     <div th:replace="fragments/header :: header-css"></div>
 
     <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <script type="module" th:src="@{/js/schedule.js}"></script>
 </head>
 <body>
 <div th:replace="fragments/header :: header"></div>
 
 <div class="container">
-
+<span  th:text="${currentUser.getId()}"/>
+<span  th:text="${role}"/>
+<span  th:text="${id}"/>
     <details id="day1" class="schedule-day">
         <summary> Today </summary>
         <div> 1 </div>

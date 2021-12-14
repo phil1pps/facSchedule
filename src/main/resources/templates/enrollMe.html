@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:replace="fragments/header :: header-css"></div>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <script type="module" th:src="@{/js/enroll.js}"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<input type="hidden" class="hidden-stud-id" th:value="${student.getId()}" />
+<input type="hidden" class="hidden-spec-id" th:value="${student.getSpeciality().getIdSpeciality()}" />
+<div class="container">
+    <h2>
+        Enrolling to groups
+    </h2>
+
+    <div class="enroll-list">
+
+    </div>
+</div>
+<!-- /.container -->
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>

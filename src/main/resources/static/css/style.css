@@ -66,3 +66,26 @@ form {
     display: flex;
     justify-content: flex-start;
 }
+.save-group-button {
+    padding: 10px 15px;
+    background-color: #262626;
+    color: #fff;
+    margin-left: 5px;
+}
+.container-enroll-line {
+    border: 1px solid #0e3f07;
+    width: fit-content;
+    padding: 15px;
+    margin: 5px 0;
+}
+.container-enroll-line select{
+    padding: 15px;
+}
+
+.enroll-subject-name-header {
+    font-size: 1.2em;
+    color: #262626;
+    text-shadow: 0 0 1px #262626;
+    margin-bottom: 15px;
+    text-align: center;
+}

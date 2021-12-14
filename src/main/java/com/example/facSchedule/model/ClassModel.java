@@ -10,12 +10,16 @@ public class ClassModel {
     private Date dayOfClass;
     private Integer numOfClass;
 
+    private String groupName;
+    private String subjectName;
+
     public static ClassModel toModel(ClassEntity classEntity) {
         ClassModel model = new ClassModel();
         model.setIdClass(classEntity.getIdClass());
         model.setDayOfClass(classEntity.getDayOfClass());
         model.setNumOfClass(classEntity.getNumOfClass());
-
+        model.setGroupName(classEntity.getSubjectGroup().getGroupName());
+        model.setSubjectName(classEntity.getSubjectGroup().getSubject().getSubjectName());
         return model;
     }
 
@@ -42,5 +46,22 @@ public class ClassModel {
 
     public void setNumOfClass(Integer numOfClass) {
         this.numOfClass = numOfClass;
+    }
+
+
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    public String getSubjectName() {
+        return subjectName;
+    }
+
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
     }
 }

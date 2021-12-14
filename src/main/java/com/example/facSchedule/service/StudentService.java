@@ -87,10 +87,10 @@ public class StudentService {
             Date today = new SimpleDateFormat( "yyyyMMdd" ).parse( dateFormat.format(new Date()));
             List<ClassModel> result = allClasses.stream().filter(i -> i.getDayOfClass().compareTo(addToDay(today,numOfDay))==0).collect(Collectors.toList());
 
-            ArrayList<String> finalRes = new ArrayList<>();
+            List<String> finalRes = new ArrayList<>();
             for (ClassModel cm : result) {
                 String adds = "";
-                if(cm.getNumOfClass()==1)adds="*8:30-9:50*";
+                if(cm.getNumOfClass()==1)adds="*08:30-9:50*";
                 else if (cm.getNumOfClass()==2)adds="*10:00-11:20*";
                 else if (cm.getNumOfClass()==3)adds="*11:40-13:00*";
                 else if (cm.getNumOfClass()==4)adds="*13:30-14:50*";
@@ -99,13 +99,9 @@ public class StudentService {
                 else if (cm.getNumOfClass()==7)adds="*18:00-19:20*";
                 finalRes.add( adds +" subject:" + cm.getSubjectName() + " group:" +  cm.getGroupName() +"\n");
             }
-            finalRes.stream().sorted().collect(Collectors.toList());
-
-            List<String> sb = new ArrayList<>();
-            sb.add(addToDay(today, numOfDay).toString().substring(0, 10)+"\n");
-            sb.addAll(finalRes);
-
-            return sb;
+            finalRes.sort(String::compareTo);
+            finalRes.add(0,addToDay(today, numOfDay).toString().substring(0, 10)+"\n");
+            return finalRes;
         }
         catch (NotFoundException ex) {
             List<String> l = new ArrayList<>();

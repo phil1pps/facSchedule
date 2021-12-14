@@ -95,3 +95,8 @@ form {
     color: #fff;
     padding: 15px;
 }
+.schedule-day p:first-child {
+    font-size: 1.4em;
+    color: #0e6403;
+    text-shadow: 0 0 1px #0e3f07;
+}

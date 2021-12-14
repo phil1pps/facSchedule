@@ -1,3 +1,7 @@
+/*
+
+let specId = document.querySelector('.hidden-spec-id').value;
+
 let Http2 = new XMLHttpRequest();
 let url2=`http://localhost:8080/schedule/getSpecialitySubjects/${specId}`;
 Http2.open("GET", url2);
@@ -10,4 +14,4 @@ Http2.onreadystatechange = (e) => {
         classes = Http2.response;
         console.log(classes);
     }
-}
+}*/

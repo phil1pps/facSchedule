@@ -19,6 +19,8 @@
                     <li> <a th:href="@{/}">Home</a></li>
                     <li sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/deanery}">DeaneryUI</a></li>
                     <li sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/deaneryAdd}">DeaneryAdd</a></li>
+                    <li sec:authorize="hasAuthority('STUDENT')"><a th:href="@{/enrollMe}">EnrollToGroups</a></li>
+                    <li sec:authorize="hasAuthority('STUDENT')"><a th:href="@{/schedule}">Schedule</a></li>
                 </ul>
             </div>
             </div>

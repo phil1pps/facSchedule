@@ -36,11 +36,10 @@ public class SubjectGroupService {
     @Autowired
     private ClassService classService;
 
-    private Date plusWeek(Date cur){
-        int noOfDays = 7; //i.e weeks
+    private Date plusDays(Date cur, int days){
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(cur);
-        calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+        calendar.add(Calendar.DAY_OF_YEAR, days);
         return calendar.getTime();
     }
 
@@ -48,15 +47,17 @@ public class SubjectGroupService {
         Date dateStart = new SimpleDateFormat( "yyyyMMdd" ).parse( dateOfStart );
         List<SubjectGroupModel> list =  StreamSupport.stream(subjectGroupRepo.findAll().spliterator(), false).map(SubjectGroupModel::toModel).collect(Collectors.toList());
         int countNumOfClass = 1;
-        for(int i = 0; i<list.size(); i++){
-            Date dayOfClass = dateStart;
-            if(i>6 && i%6==0) countNumOfClass++;
+        Date dayOfClass = dateStart;
+        for(int i = 0; i<list.size(); i++,countNumOfClass++){
+            if(countNumOfClass >= 6) {
+                countNumOfClass=1;
+                dayOfClass = plusDays(dayOfClass, 1);
+            }
             for(int week = 0; week<17; week++){
                 ClassEntity classE = new ClassEntity();
-                classE.setDayOfClass(dayOfClass);
+                classE.setDayOfClass(plusDays(dayOfClass, week*7));
                 classE.setNumOfClass(countNumOfClass);
                 classService.addClass(classE,list.get(i).getIdGroup());
-                dayOfClass = plusWeek(dayOfClass);
             }
         }
     }

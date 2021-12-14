@@ -305,3 +305,20 @@ function showStudentsAndSubjectsForSpeciality(specId) {
 
 
 init();
+
+
+
+let buttGen = document.querySelector('.gen-schedule');
+buttGen.addEventListener('click', function() {
+
+
+    let Http2 = new XMLHttpRequest();
+    let url2=`http://localhost:8080/deanery/generateSchedule/20210901`;
+    Http2.open("POST", url2);
+    Http2.send();
+    Http2.onreadystatechange = (e) => {
+        if(Http2.readyState === 4 && Http2.status === 200) {
+            console.log("Request for gen schedule sent to the server!");
+        }
+    }
+});

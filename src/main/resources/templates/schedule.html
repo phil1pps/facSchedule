@@ -10,11 +10,44 @@
 <body>
 <div th:replace="fragments/header :: header"></div>
 
+<input type="hidden" class="hidden-spec-id" th:value="${student.getSpeciality().getIdSpeciality()}" />
 <div class="container">
-<span  th:text="${currentUser.getId()}"/>
-<span  th:text="${role}"/>
-<span  th:text="${id}"/>
-    <details id="day1" class="schedule-day">
+
+    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),0)}">
+
+    </div>
+    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),1)}">
+
+    </div>
+    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),2)}">
+
+    </div>
+    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),3)}">
+
+    </div>
+    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),4)}">
+
+    </div>
+    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),5)}">
+
+    </div>
+    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),6)}">
+
+    </div>
+</div>
+<!-- /.container -->
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>
+
+
+
+
+
+<!--
+
+    <details id="day1" >
         <summary> Today </summary>
         <div> 1 </div>
         <div> 1 </div>
@@ -77,9 +110,4 @@
         <div> 1 </div>
     </details>
 
-</div>
-<!-- /.container -->
-<div th:replace="fragments/footer :: footer"></div>
-
-</body>
-</html>
+ -->

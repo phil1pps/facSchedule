@@ -1,9 +1,13 @@
 package com.example.facSchedule.controllers;
 
+import com.example.facSchedule.entity.ProfessorEntity;
 import com.example.facSchedule.entity.StudentEntity;
 import com.example.facSchedule.entity.Users;
+import com.example.facSchedule.repository.ProfessorRepo;
 import com.example.facSchedule.repository.StudentRepo;
 import com.example.facSchedule.repository.UsersRepo;
+import com.example.facSchedule.service.ProfessorService;
+import com.example.facSchedule.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -19,6 +23,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
         private UsersRepo userRepository;
         @Autowired
         private StudentRepo studentRepo;
+        @Autowired
+        private StudentService studService;
+        @Autowired
+        private ProfessorRepo professorRepo;
+        @Autowired
+        private ProfessorService profService;
 
         @ResponseBody
         @GetMapping("/greeting")
@@ -50,11 +60,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
         @GetMapping("/schedule")
         public String schedule(Model model, @AuthenticationPrincipal UserDetails currentUser ) {
-            Users user =  userRepository.findByUsername(currentUser.getUsername());
-            model.addAttribute("currentUser", user);
-            model.addAttribute("username", user.getUsername());
-            model.addAttribute("role", user.getRole());
-            model.addAttribute("id", user.getId());
+            StudentEntity student =  studentRepo.findByUsername(currentUser.getUsername());
+            ProfessorEntity professor =  professorRepo.findByUsername(currentUser.getUsername());
+            if(student != null) {
+                model.addAttribute("studService", studService );
+                model.addAttribute("student", student );
+            }
+            else if (professor != null) {
+
+                model.addAttribute("profService", profService);
+                model.addAttribute("professor", professor);
+            }
             return "/schedule";
         }
 

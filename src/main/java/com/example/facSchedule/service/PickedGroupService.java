@@ -46,7 +46,7 @@ public class PickedGroupService {
         if (student == null) throw new NotFoundException("No such student!");
         List<SubjectGroupEntity> list =  StreamSupport.stream(pickedGroupRepo.findAllByStudent(student).spliterator(), false).map(PickedGroupEntity::getSubjectGroup)
                 .collect(Collectors.toList());
-        if(list.isEmpty()) throw new NotFoundException("No picked group");
+        if(list.isEmpty()) throw new NotFoundException("No picked groups");
         List<SubjectGroupModel> res = list.stream().map(SubjectGroupModel::toModel).collect(Collectors.toList());
         return res;
     }

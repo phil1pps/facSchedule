@@ -8,8 +8,8 @@ public class ClassModel {
 
     private Long idClass;
     private Date dayOfClass;
+    private String day;
     private Integer numOfClass;
-
     private String groupName;
     private String subjectName;
 
@@ -17,6 +17,9 @@ public class ClassModel {
         ClassModel model = new ClassModel();
         model.setIdClass(classEntity.getIdClass());
         model.setDayOfClass(classEntity.getDayOfClass());
+
+        model.setDay(classEntity.getDayOfClass().toString());
+
         model.setNumOfClass(classEntity.getNumOfClass());
         model.setGroupName(classEntity.getSubjectGroup().getGroupName());
         model.setSubjectName(classEntity.getSubjectGroup().getSubject().getSubjectName());
@@ -63,5 +66,13 @@ public class ClassModel {
 
     public void setSubjectName(String subjectName) {
         this.subjectName = subjectName;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
     }
 }

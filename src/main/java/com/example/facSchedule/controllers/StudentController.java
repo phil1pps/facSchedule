@@ -2,10 +2,12 @@ package com.example.facSchedule.controllers;
 
 import com.example.facSchedule.service.PickedGroupService;
 import com.example.facSchedule.service.StudentService;
+import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@Log
 @RestController
 @RequestMapping("/student")
 public class StudentController {
@@ -38,6 +40,15 @@ public class StudentController {
     public ResponseEntity getAllWeekClasses(@PathVariable Long idStudent) {
         try {
             return ResponseEntity.ok(studentService.getClassesForWeekForStudent(idStudent));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @GetMapping("/getClassesForDay/{idStudent}/{numOfDay}")
+    public ResponseEntity getClassesForDay(@PathVariable Long idStudent, @PathVariable int numOfDay) {
+        try {
+            return ResponseEntity.ok(studentService.getClassesForDay(idStudent, numOfDay));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }

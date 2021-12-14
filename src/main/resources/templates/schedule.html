@@ -13,26 +13,26 @@
 <input type="hidden" class="hidden-spec-id" th:value="${student.getSpeciality().getIdSpeciality()}" />
 <div class="container">
 
-    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),0)}">
-
+    <div class="schedule-day" >
+        <p th:each="message: ${studService.getClassesForDay(student.getId(),0)}" th:text="${message}"></p>
     </div>
-    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),1)}">
-
+    <div class="schedule-day">
+        <p th:each="message: ${studService.getClassesForDay(student.getId(),1)}" th:text="${message}"></p>
     </div>
-    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),2)}">
-
+    <div class="schedule-day">
+        <p th:each="message: ${studService.getClassesForDay(student.getId(),2)}" th:text="${message}"></p>
     </div>
-    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),3)}">
-
+    <div class="schedule-day" >
+        <p th:each="message: ${studService.getClassesForDay(student.getId(),3)}" th:text="${message}"></p>
     </div>
-    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),4)}">
-
+    <div class="schedule-day" >
+        <p th:each="message: ${studService.getClassesForDay(student.getId(),4)}" th:text="${message}"></p>
     </div>
-    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),5)}">
-
+    <div class="schedule-day">
+        <p th:each="message: ${studService.getClassesForDay(student.getId(),5)}" th:text="${message}"></p>
     </div>
-    <div class="schedule-day" th:text="${studService.getClassesForDay(student.getId(),6)}">
-
+    <div class="schedule-day">
+        <p th:each="message: ${studService.getClassesForDay(student.getId(),6)}" th:text="${message}"></p>
     </div>
 </div>
 <!-- /.container -->

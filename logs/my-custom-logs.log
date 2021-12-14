@@ -7471,3 +7471,444 @@ CustomAppender: 1639498391004 [INFO] Cache cleaned
 CustomAppender: 1639498391953 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
 CustomAppender: 1639498391956 [INFO] HikariPool-1 - Shutdown initiated...
 CustomAppender: 1639498391958 [INFO] HikariPool-1 - Shutdown completed.
+CustomAppender: 1639498546451 [INFO] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 9004 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomAppender: 1639498546452 [INFO] The following profiles are active: prod
+CustomAppender: 1639498546497 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639498546498 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639498547016 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639498547073 [INFO] Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639498547616 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639498547625 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639498547626 [INFO] Starting service [Tomcat]
+CustomAppender: 1639498547626 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639498547700 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639498547700 [INFO] Root WebApplicationContext: initialization completed in 1202 ms
+CustomAppender: 1639498547738 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639498547833 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639498547840 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomAppender: 1639498547986 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639498548020 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639498548112 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639498548179 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639498548715 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639498548722 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639498549065 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639498549369 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2166dacd, org.springframework.security.web.context.SecurityContextPersistenceFilter@42b12b79, org.springframework.security.web.header.HeaderWriterFilter@4d181bc3, org.springframework.security.web.authentication.logout.LogoutFilter@4e1c1c2a, com.example.facSchedule.config.security.JwtFilter@1271d161, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a8fb370, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f36a9db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@517c1b04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ff03877, org.springframework.security.web.session.SessionManagementFilter@5221bf44, org.springframework.security.web.access.ExceptionTranslationFilter@3c1c37e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@146942c7]
+CustomAppender: 1639498549577 [INFO] Adding welcome page template: index
+CustomAppender: 1639498549798 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639498549817 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639498549832 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639498549843 [INFO] Some motivation for log reader:) <*> Playing sports because you enjoy how they make you feel! <*>
+CustomAppender: 1639498549846 [INFO] Started FacScheduleApplication in 3.665 seconds (JVM running for 4.422)
+CustomAppender: 1639498554856 [INFO] Cache cleaned
+CustomAppender: 1639498557313 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomAppender: 1639498557313 [INFO] Initializing Servlet 'dispatcherServlet'
+CustomAppender: 1639498557314 [INFO] Completed initialization in 1 ms
+CustomAppender: 1639498557326 [INFO] do filter...
+CustomAppender: 1639498557328 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557498 [INFO] do filter...
+CustomAppender: 1639498557498 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557874 [INFO] do filter...
+CustomAppender: 1639498557875 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557876 [INFO] do filter...
+CustomAppender: 1639498557876 [INFO] do filter...
+CustomAppender: 1639498557877 [INFO] do filter...
+CustomAppender: 1639498557877 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557877 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557877 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557882 [INFO] do filter...
+CustomAppender: 1639498557883 [INFO] do filter...
+CustomAppender: 1639498557883 [INFO] do filter...
+CustomAppender: 1639498557884 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557884 [INFO] do filter...
+CustomAppender: 1639498557885 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557886 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557887 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557946 [INFO] do filter...
+CustomAppender: 1639498557947 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498557953 [INFO] do filter...
+CustomAppender: 1639498557954 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558886 [INFO] do filter...
+CustomAppender: 1639498558887 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558892 [INFO] do filter...
+CustomAppender: 1639498558893 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558986 [INFO] do filter...
+CustomAppender: 1639498558987 [INFO] do filter...
+CustomAppender: 1639498558987 [INFO] do filter...
+CustomAppender: 1639498558987 [INFO] do filter...
+CustomAppender: 1639498558988 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558988 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558988 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558989 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558994 [INFO] do filter...
+CustomAppender: 1639498558995 [INFO] do filter...
+CustomAppender: 1639498558995 [INFO] do filter...
+CustomAppender: 1639498558995 [INFO] do filter...
+CustomAppender: 1639498558995 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558996 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558996 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498558997 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498559046 [INFO] do filter...
+CustomAppender: 1639498559046 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498559049 [INFO] do filter...
+CustomAppender: 1639498559049 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498559844 [INFO] Cache cleaned
+CustomAppender: 1639498564852 [INFO] Cache cleaned
+CustomAppender: 1639498569850 [INFO] Cache cleaned
+CustomAppender: 1639498574855 [INFO] Cache cleaned
+CustomAppender: 1639498579843 [INFO] Cache cleaned
+CustomAppender: 1639498584853 [INFO] Cache cleaned
+CustomAppender: 1639498589856 [INFO] Cache cleaned
+CustomAppender: 1639498594850 [INFO] Cache cleaned
+CustomAppender: 1639498599856 [INFO] Cache cleaned
+CustomAppender: 1639498604856 [INFO] Cache cleaned
+CustomAppender: 1639498609852 [INFO] Cache cleaned
+CustomAppender: 1639498609853 [INFO] Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomAppender: 1639498614853 [INFO] Cache cleaned
+CustomAppender: 1639498619844 [INFO] Cache cleaned
+CustomAppender: 1639498624843 [INFO] Cache cleaned
+CustomAppender: 1639498629849 [INFO] Cache cleaned
+CustomAppender: 1639498634843 [INFO] Cache cleaned
+CustomAppender: 1639498639855 [INFO] Cache cleaned
+CustomAppender: 1639498644857 [INFO] Cache cleaned
+CustomAppender: 1639498649663 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639498649668 [INFO] HikariPool-1 - Shutdown initiated...
+CustomAppender: 1639498649670 [INFO] HikariPool-1 - Shutdown completed.
+CustomAppender: 1639498654254 [INFO] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 19904 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomAppender: 1639498654255 [INFO] The following profiles are active: prod
+CustomAppender: 1639498654291 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639498654291 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639498654800 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639498654857 [INFO] Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639498655511 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639498655518 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639498655519 [INFO] Starting service [Tomcat]
+CustomAppender: 1639498655519 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639498655604 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639498655604 [INFO] Root WebApplicationContext: initialization completed in 1312 ms
+CustomAppender: 1639498655637 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639498655737 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639498655744 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomAppender: 1639498655908 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639498655945 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639498656050 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639498656129 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639498656701 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639498656708 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639498657058 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639498657395 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5babd59b, org.springframework.security.web.context.SecurityContextPersistenceFilter@16172a1a, org.springframework.security.web.header.HeaderWriterFilter@740bec29, org.springframework.security.web.authentication.logout.LogoutFilter@15190167, com.example.facSchedule.config.security.JwtFilter@3d2814e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@302271b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ef64ad6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68d5fdff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6118552e, org.springframework.security.web.session.SessionManagementFilter@563e6850, org.springframework.security.web.access.ExceptionTranslationFilter@16584633, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60256320]
+CustomAppender: 1639498657617 [INFO] Adding welcome page template: index
+CustomAppender: 1639498657838 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639498657853 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639498657868 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639498657879 [INFO] Some motivation for log reader:) <*> Investing money because you want to become financially independent! <*>
+CustomAppender: 1639498657882 [INFO] Started FacScheduleApplication in 3.903 seconds (JVM running for 4.65)
+CustomAppender: 1639498661916 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomAppender: 1639498661917 [INFO] Initializing Servlet 'dispatcherServlet'
+CustomAppender: 1639498661918 [INFO] Completed initialization in 0 ms
+CustomAppender: 1639498661928 [INFO] do filter...
+CustomAppender: 1639498661930 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662097 [INFO] do filter...
+CustomAppender: 1639498662098 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662385 [INFO] Tue Dec 14
+
+
+CustomAppender: 1639498662397 [INFO] Wed Dec 15
+
+*13:30-14:50* subject:Spring Boot  group:Lection
+
+*10:00-11:20* subject:Spring Boot  group:2st practice
+
+*11:40-13:00* subject:Spring Boot  group:3st practice
+
+*15:00-16:20* subject:Java group:Lection
+
+
+CustomAppender: 1639498662406 [INFO] Thu Dec 16
+
+*10:00-11:20* subject:Java group:2st Practice
+
+
+CustomAppender: 1639498662414 [INFO] Fri Dec 17
+
+*8:30-9:50* subject:Math group:Lection
+
+*10:00-11:20* subject:Math group:1st practice
+
+
+CustomAppender: 1639498662421 [INFO] Sat Dec 18
+
+*13:30-14:50* subject:Databases group:2st practice
+
+*10:00-11:20* subject:Databases group:Lection
+
+
+CustomAppender: 1639498662430 [INFO] Sun Dec 19
+
+*10:00-11:20* subject:c++ group:Lection
+
+*13:30-14:50* subject:c++ group:4st practice
+
+
+CustomAppender: 1639498662439 [INFO] Mon Dec 20
+
+
+CustomAppender: 1639498662490 [INFO] do filter...
+CustomAppender: 1639498662491 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662494 [INFO] do filter...
+CustomAppender: 1639498662494 [INFO] do filter...
+CustomAppender: 1639498662495 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662495 [INFO] do filter...
+CustomAppender: 1639498662495 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662496 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662501 [INFO] do filter...
+CustomAppender: 1639498662501 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662502 [INFO] do filter...
+CustomAppender: 1639498662503 [INFO] do filter...
+CustomAppender: 1639498662503 [INFO] do filter...
+CustomAppender: 1639498662503 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662504 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662504 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662559 [INFO] do filter...
+CustomAppender: 1639498662559 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662566 [INFO] do filter...
+CustomAppender: 1639498662567 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639498662882 [INFO] Cache cleaned
+CustomAppender: 1639498667892 [INFO] Cache cleaned
+CustomAppender: 1639498672881 [INFO] Cache cleaned
+CustomAppender: 1639498677883 [INFO] Cache cleaned
+CustomAppender: 1639498682890 [INFO] Cache cleaned
+CustomAppender: 1639498687891 [INFO] Cache cleaned
+CustomAppender: 1639498692884 [INFO] Cache cleaned
+CustomAppender: 1639498697891 [INFO] Cache cleaned
+CustomAppender: 1639498702885 [INFO] Cache cleaned
+CustomAppender: 1639498707883 [INFO] Cache cleaned
+CustomAppender: 1639498712885 [INFO] Cache cleaned
+CustomAppender: 1639498717892 [INFO] Cache cleaned
+CustomAppender: 1639498717892 [INFO] Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomAppender: 1639498722887 [INFO] Cache cleaned
+CustomAppender: 1639498727880 [INFO] Cache cleaned
+CustomAppender: 1639498732879 [INFO] Cache cleaned
+CustomAppender: 1639498737880 [INFO] Cache cleaned
+CustomAppender: 1639498742891 [INFO] Cache cleaned
+CustomAppender: 1639498747891 [INFO] Cache cleaned
+CustomAppender: 1639498752893 [INFO] Cache cleaned
+CustomAppender: 1639498757890 [INFO] Cache cleaned
+CustomAppender: 1639498762892 [INFO] Cache cleaned
+CustomAppender: 1639498767883 [INFO] Cache cleaned
+CustomAppender: 1639498772886 [INFO] Cache cleaned
+CustomAppender: 1639498777880 [INFO] Cache cleaned
+CustomAppender: 1639498777897 [INFO] Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomAppender: 1639498782893 [INFO] Cache cleaned
+CustomAppender: 1639498787893 [INFO] Cache cleaned
+CustomAppender: 1639498792890 [INFO] Cache cleaned
+CustomAppender: 1639498797881 [INFO] Cache cleaned
+CustomAppender: 1639498802891 [INFO] Cache cleaned
+CustomAppender: 1639498807892 [INFO] Cache cleaned
+CustomAppender: 1639498812884 [INFO] Cache cleaned
+CustomAppender: 1639498817879 [INFO] Cache cleaned
+CustomAppender: 1639498822888 [INFO] Cache cleaned
+CustomAppender: 1639498827884 [INFO] Cache cleaned
+CustomAppender: 1639498832893 [INFO] Cache cleaned
+CustomAppender: 1639498837886 [INFO] Cache cleaned
+CustomAppender: 1639498837902 [INFO] Some motivation for log reader:) <*> Staying longer at work because you believe in your work! <*>
+CustomAppender: 1639498842892 [INFO] Cache cleaned
+CustomAppender: 1639498847880 [INFO] Cache cleaned
+CustomAppender: 1639498852879 [INFO] Cache cleaned
+CustomAppender: 1639498857889 [INFO] Cache cleaned
+CustomAppender: 1639498862890 [INFO] Cache cleaned
+CustomAppender: 1639498867881 [INFO] Cache cleaned
+CustomAppender: 1639498872878 [INFO] Cache cleaned
+CustomAppender: 1639498877885 [INFO] Cache cleaned
+CustomAppender: 1639498882886 [INFO] Cache cleaned
+CustomAppender: 1639498887882 [INFO] Cache cleaned
+CustomAppender: 1639498892880 [INFO] Cache cleaned
+CustomAppender: 1639498897880 [INFO] Cache cleaned
+CustomAppender: 1639498897910 [INFO] Some motivation for log reader:) <*> Staying longer at work because you believe in your work! <*>
+CustomAppender: 1639498902889 [INFO] Cache cleaned
+CustomAppender: 1639498907887 [INFO] Cache cleaned
+CustomAppender: 1639498912881 [INFO] Cache cleaned
+CustomAppender: 1639498917889 [INFO] Cache cleaned
+CustomAppender: 1639498922879 [INFO] Cache cleaned
+CustomAppender: 1639498927888 [INFO] Cache cleaned
+CustomAppender: 1639498932892 [INFO] Cache cleaned
+CustomAppender: 1639498937891 [INFO] Cache cleaned
+CustomAppender: 1639498942889 [INFO] Cache cleaned
+CustomAppender: 1639498947887 [INFO] Cache cleaned
+CustomAppender: 1639498952894 [INFO] Cache cleaned
+CustomAppender: 1639498957890 [INFO] Cache cleaned
+CustomAppender: 1639498957923 [INFO] Some motivation for log reader:) <*> Staying longer at work because you believe in your work! <*>
+CustomAppender: 1639498962887 [INFO] Cache cleaned
+CustomAppender: 1639498967885 [INFO] Cache cleaned
+CustomAppender: 1639498972881 [INFO] Cache cleaned
+CustomAppender: 1639498977886 [INFO] Cache cleaned
+CustomAppender: 1639498982891 [INFO] Cache cleaned
+CustomAppender: 1639498987881 [INFO] Cache cleaned
+CustomAppender: 1639498992893 [INFO] Cache cleaned
+CustomAppender: 1639498997884 [INFO] Cache cleaned
+CustomAppender: 1639499002887 [INFO] Cache cleaned
+CustomAppender: 1639499007882 [INFO] Cache cleaned
+CustomAppender: 1639499012885 [INFO] Cache cleaned
+CustomAppender: 1639499017894 [INFO] Cache cleaned
+CustomAppender: 1639499017926 [INFO] Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomAppender: 1639499022892 [INFO] Cache cleaned
+CustomAppender: 1639499027884 [INFO] Cache cleaned
+CustomAppender: 1639499032886 [INFO] Cache cleaned
+CustomAppender: 1639499037894 [INFO] Cache cleaned
+CustomAppender: 1639499042889 [INFO] Cache cleaned
+CustomAppender: 1639499047883 [INFO] Cache cleaned
+CustomAppender: 1639499052881 [INFO] Cache cleaned
+CustomAppender: 1639499057885 [INFO] Cache cleaned
+CustomAppender: 1639499062883 [INFO] Cache cleaned
+CustomAppender: 1639499067890 [INFO] Cache cleaned
+CustomAppender: 1639499072888 [INFO] Cache cleaned
+CustomAppender: 1639499077887 [INFO] Cache cleaned
+CustomAppender: 1639499077933 [INFO] Some motivation for log reader:) <*> Investing money because you want to become financially independent! <*>
+CustomAppender: 1639499082882 [INFO] Cache cleaned
+CustomAppender: 1639499087882 [INFO] Cache cleaned
+CustomAppender: 1639499092893 [INFO] Cache cleaned
+CustomAppender: 1639499097890 [INFO] Cache cleaned
+CustomAppender: 1639499102893 [INFO] Cache cleaned
+CustomAppender: 1639499107893 [INFO] Cache cleaned
+CustomAppender: 1639499112880 [INFO] Cache cleaned
+CustomAppender: 1639499117885 [INFO] Cache cleaned
+CustomAppender: 1639499122892 [INFO] Cache cleaned
+CustomAppender: 1639499127887 [INFO] Cache cleaned
+CustomAppender: 1639499132888 [INFO] Cache cleaned
+CustomAppender: 1639499137879 [INFO] Cache cleaned
+CustomAppender: 1639499137941 [INFO] Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomAppender: 1639499142881 [INFO] Cache cleaned
+CustomAppender: 1639499147890 [INFO] Cache cleaned
+CustomAppender: 1639499152880 [INFO] Cache cleaned
+CustomAppender: 1639499157885 [INFO] Cache cleaned
+CustomAppender: 1639499162881 [INFO] Cache cleaned
+CustomAppender: 1639499167879 [INFO] Cache cleaned
+CustomAppender: 1639499172890 [INFO] Cache cleaned
+CustomAppender: 1639499177889 [INFO] Cache cleaned
+CustomAppender: 1639499182890 [INFO] Cache cleaned
+CustomAppender: 1639499187897 [INFO] Cache cleaned
+CustomAppender: 1639499192890 [INFO] Cache cleaned
+CustomAppender: 1639499197886 [INFO] Cache cleaned
+CustomAppender: 1639499197948 [INFO] Some motivation for log reader:) <*> Playing sports because you enjoy how they make you feel! <*>
+CustomAppender: 1639499202887 [INFO] Cache cleaned
+CustomAppender: 1639499207888 [INFO] Cache cleaned
+CustomAppender: 1639499212892 [INFO] Cache cleaned
+CustomAppender: 1639499217890 [INFO] Cache cleaned
+CustomAppender: 1639499222888 [INFO] Cache cleaned
+CustomAppender: 1639499224352 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639499224355 [INFO] HikariPool-1 - Shutdown initiated...
+CustomAppender: 1639499224357 [INFO] HikariPool-1 - Shutdown completed.
+CustomAppender: 1639499230586 [INFO] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 51724 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomAppender: 1639499230587 [INFO] The following profiles are active: prod
+CustomAppender: 1639499230635 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639499230636 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639499231165 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639499231222 [INFO] Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639499231822 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639499231830 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639499231831 [INFO] Starting service [Tomcat]
+CustomAppender: 1639499231831 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639499231904 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639499231905 [INFO] Root WebApplicationContext: initialization completed in 1268 ms
+CustomAppender: 1639499231940 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639499232043 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639499232050 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomAppender: 1639499232212 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639499232253 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639499232348 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639499232419 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639499232971 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639499232978 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639499233308 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639499233640 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56771d65, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c1c37e0, org.springframework.security.web.header.HeaderWriterFilter@2c2873a8, org.springframework.security.web.authentication.logout.LogoutFilter@696fba41, com.example.facSchedule.config.security.JwtFilter@216048ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2dc17fa7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@465927ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1158b66f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67cdbc01, org.springframework.security.web.session.SessionManagementFilter@504e5853, org.springframework.security.web.access.ExceptionTranslationFilter@f7b716b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f51d5d8]
+CustomAppender: 1639499233868 [INFO] Adding welcome page template: index
+CustomAppender: 1639499234113 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639499234133 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639499234148 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639499234159 [INFO] Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomAppender: 1639499234163 [INFO] Started FacScheduleApplication in 3.912 seconds (JVM running for 4.725)
+CustomAppender: 1639499234191 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomAppender: 1639499234191 [INFO] Initializing Servlet 'dispatcherServlet'
+CustomAppender: 1639499234193 [INFO] Completed initialization in 1 ms
+CustomAppender: 1639499234206 [INFO] do filter...
+CustomAppender: 1639499234209 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499234402 [INFO] do filter...
+CustomAppender: 1639499234403 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499234657 [ERROR] [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/schedule": An error happened during template parsing (template: "class path resource [templates//schedule.html]")
+CustomAppender: 1639499234661 [ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//schedule.html]")] with root cause
+CustomAppender: 1639499234664 [INFO] do filter...
+CustomAppender: 1639499234665 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499239168 [INFO] Cache cleaned
+CustomAppender: 1639499244162 [INFO] Cache cleaned
+CustomAppender: 1639499249168 [INFO] Cache cleaned
+CustomAppender: 1639499254171 [INFO] Cache cleaned
+CustomAppender: 1639499259174 [INFO] Cache cleaned
+CustomAppender: 1639499260630 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639499260633 [INFO] HikariPool-1 - Shutdown initiated...
+CustomAppender: 1639499260635 [INFO] HikariPool-1 - Shutdown completed.
+CustomAppender: 1639499264625 [INFO] Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 53356 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomAppender: 1639499264626 [INFO] The following profiles are active: prod
+CustomAppender: 1639499264662 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomAppender: 1639499264662 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomAppender: 1639499265180 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomAppender: 1639499265235 [INFO] Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomAppender: 1639499265775 [INFO] Tomcat initialized with port(s): 8080 (http)
+CustomAppender: 1639499265782 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639499265782 [INFO] Starting service [Tomcat]
+CustomAppender: 1639499265783 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomAppender: 1639499265861 [INFO] Initializing Spring embedded WebApplicationContext
+CustomAppender: 1639499265861 [INFO] Root WebApplicationContext: initialization completed in 1198 ms
+CustomAppender: 1639499265893 [INFO] HikariPool-1 - Starting...
+CustomAppender: 1639499265986 [INFO] HikariPool-1 - Start completed.
+CustomAppender: 1639499265995 [INFO] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomAppender: 1639499266148 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomAppender: 1639499266181 [INFO] HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomAppender: 1639499266275 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomAppender: 1639499266342 [INFO] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomAppender: 1639499266906 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomAppender: 1639499266913 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomAppender: 1639499267255 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomAppender: 1639499267597 [INFO] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@314d0378, org.springframework.security.web.context.SecurityContextPersistenceFilter@f16a3ae, org.springframework.security.web.header.HeaderWriterFilter@355daef9, org.springframework.security.web.authentication.logout.LogoutFilter@227ae61f, com.example.facSchedule.config.security.JwtFilter@ade0ca1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@734f847d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c23c850, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41bc4452, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@983ab09, org.springframework.security.web.session.SessionManagementFilter@2b6c370b, org.springframework.security.web.access.ExceptionTranslationFilter@47c317a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3eccd0c5]
+CustomAppender: 1639499267834 [INFO] Adding welcome page template: index
+CustomAppender: 1639499268068 [INFO] LiveReload server is running on port 35729
+CustomAppender: 1639499268086 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+CustomAppender: 1639499268103 [INFO] Tomcat started on port(s): 8080 (http) with context path ''
+CustomAppender: 1639499268114 [INFO] Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomAppender: 1639499268117 [INFO] Started FacScheduleApplication in 3.767 seconds (JVM running for 4.835)
+CustomAppender: 1639499271225 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomAppender: 1639499271226 [INFO] Initializing Servlet 'dispatcherServlet'
+CustomAppender: 1639499271227 [INFO] Completed initialization in 1 ms
+CustomAppender: 1639499271241 [INFO] do filter...
+CustomAppender: 1639499271243 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271413 [INFO] do filter...
+CustomAppender: 1639499271414 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271787 [INFO] do filter...
+CustomAppender: 1639499271788 [INFO] do filter...
+CustomAppender: 1639499271788 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271788 [INFO] do filter...
+CustomAppender: 1639499271789 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271790 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271790 [INFO] do filter...
+CustomAppender: 1639499271791 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271796 [INFO] do filter...
+CustomAppender: 1639499271797 [INFO] do filter...
+CustomAppender: 1639499271797 [INFO] do filter...
+CustomAppender: 1639499271797 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271797 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271798 [INFO] do filter...
+CustomAppender: 1639499271798 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271798 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271856 [INFO] do filter...
+CustomAppender: 1639499271856 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499271861 [INFO] do filter...
+CustomAppender: 1639499271862 [INFO] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomAppender: 1639499273126 [INFO] Cache cleaned
+CustomAppender: 1639499278118 [INFO] Cache cleaned
+CustomAppender: 1639499283117 [INFO] Cache cleaned
+CustomAppender: 1639499288127 [INFO] Cache cleaned
+CustomAppender: 1639499293116 [INFO] Cache cleaned
+CustomAppender: 1639499298116 [INFO] Cache cleaned
+CustomAppender: 1639499303127 [INFO] Cache cleaned
+CustomAppender: 1639499308120 [INFO] Cache cleaned
+CustomAppender: 1639499313122 [INFO] Cache cleaned
+CustomAppender: 1639499318121 [INFO] Cache cleaned

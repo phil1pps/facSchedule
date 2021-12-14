@@ -5300,3 +5300,444 @@ CustomLayout:: 179063 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler
 CustomLayout:: 180012 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 CustomLayout:: 180015 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 CustomLayout:: 180018 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+CustomLayout:: 542 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 9004 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomLayout:: 546 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: prod
+CustomLayout:: 591 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 591 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1110 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1166 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 1709 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 1719 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 1720 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 1720 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 1793 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 1794 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1202 ms
+CustomLayout:: 1831 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 1926 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 1933 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomLayout:: 2080 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2114 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2205 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2272 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 2808 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 2816 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3158 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 3463 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2166dacd, org.springframework.security.web.context.SecurityContextPersistenceFilter@42b12b79, org.springframework.security.web.header.HeaderWriterFilter@4d181bc3, org.springframework.security.web.authentication.logout.LogoutFilter@4e1c1c2a, com.example.facSchedule.config.security.JwtFilter@1271d161, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a8fb370, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f36a9db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@517c1b04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ff03877, org.springframework.security.web.session.SessionManagementFilter@5221bf44, org.springframework.security.web.access.ExceptionTranslationFilter@3c1c37e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@146942c7]
+CustomLayout:: 3671 INFO [restartedMain] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+CustomLayout:: 3892 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 3910 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 3926 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 3936 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Playing sports because you enjoy how they make you feel! <*>
+CustomLayout:: 3939 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 3.665 seconds (JVM running for 4.422)
+CustomLayout:: 8949 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 11406 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomLayout:: 11407 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+CustomLayout:: 11408 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+CustomLayout:: 11419 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11421 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11591 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11592 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11967 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11968 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11969 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11969 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11969 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11970 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11970 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11971 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11975 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11976 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11976 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11977 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11976 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 11977 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11978 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 11978 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 12040 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 12041 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 12046 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 12047 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 12980 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 12981 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 12985 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 12987 INFO [http-nio-8080-exec-7] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13080 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13080 INFO [http-nio-8080-exec-9] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13080 INFO [http-nio-8080-exec-10] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13081 INFO [http-nio-8080-exec-9] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13081 INFO [http-nio-8080-exec-10] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13081 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13081 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13082 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13087 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13087 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13087 INFO [http-nio-8080-exec-10] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13087 INFO [http-nio-8080-exec-9] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13088 INFO [http-nio-8080-exec-9] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13089 INFO [http-nio-8080-exec-10] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13089 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13089 INFO [http-nio-8080-exec-8] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13139 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13140 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13143 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 13143 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 13938 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 18945 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 23943 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 28948 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 33936 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 38946 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 43949 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 48943 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 53949 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 58949 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 63945 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 63946 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomLayout:: 68946 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 73937 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 78936 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 83943 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 88937 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 93948 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 98950 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 103756 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 103761 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+CustomLayout:: 103764 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+CustomLayout:: 545 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 19904 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomLayout:: 548 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: prod
+CustomLayout:: 583 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 584 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1093 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1150 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 1804 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 1811 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 1811 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 1812 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 1896 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 1897 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
+CustomLayout:: 1929 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 2029 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 2037 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomLayout:: 2200 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2237 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2342 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2421 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 2993 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 3000 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3351 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 3687 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5babd59b, org.springframework.security.web.context.SecurityContextPersistenceFilter@16172a1a, org.springframework.security.web.header.HeaderWriterFilter@740bec29, org.springframework.security.web.authentication.logout.LogoutFilter@15190167, com.example.facSchedule.config.security.JwtFilter@3d2814e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@302271b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ef64ad6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68d5fdff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6118552e, org.springframework.security.web.session.SessionManagementFilter@563e6850, org.springframework.security.web.access.ExceptionTranslationFilter@16584633, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60256320]
+CustomLayout:: 3910 INFO [restartedMain] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+CustomLayout:: 4130 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 4145 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 4160 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 4171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Investing money because you want to become financially independent! <*>
+CustomLayout:: 4175 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 3.903 seconds (JVM running for 4.65)
+CustomLayout:: 8208 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomLayout:: 8209 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+CustomLayout:: 8210 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+CustomLayout:: 8221 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8223 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8389 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8390 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8678 INFO [http-nio-8080-exec-1] com.example.facSchedule.service.StudentService - Tue Dec 14
+
+
+CustomLayout:: 8689 INFO [http-nio-8080-exec-1] com.example.facSchedule.service.StudentService - Wed Dec 15
+
+*13:30-14:50* subject:Spring Boot  group:Lection
+
+*10:00-11:20* subject:Spring Boot  group:2st practice
+
+*11:40-13:00* subject:Spring Boot  group:3st practice
+
+*15:00-16:20* subject:Java group:Lection
+
+
+CustomLayout:: 8698 INFO [http-nio-8080-exec-1] com.example.facSchedule.service.StudentService - Thu Dec 16
+
+*10:00-11:20* subject:Java group:2st Practice
+
+
+CustomLayout:: 8706 INFO [http-nio-8080-exec-1] com.example.facSchedule.service.StudentService - Fri Dec 17
+
+*8:30-9:50* subject:Math group:Lection
+
+*10:00-11:20* subject:Math group:1st practice
+
+
+CustomLayout:: 8713 INFO [http-nio-8080-exec-1] com.example.facSchedule.service.StudentService - Sat Dec 18
+
+*13:30-14:50* subject:Databases group:2st practice
+
+*10:00-11:20* subject:Databases group:Lection
+
+
+CustomLayout:: 8723 INFO [http-nio-8080-exec-1] com.example.facSchedule.service.StudentService - Sun Dec 19
+
+*10:00-11:20* subject:c++ group:Lection
+
+*13:30-14:50* subject:c++ group:4st practice
+
+
+CustomLayout:: 8732 INFO [http-nio-8080-exec-1] com.example.facSchedule.service.StudentService - Mon Dec 20
+
+
+CustomLayout:: 8782 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8783 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8786 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8787 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8787 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8787 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8788 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8788 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8793 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8794 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8795 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8795 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8795 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8796 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8796 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8796 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8851 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8852 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 8858 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 8859 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 9173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 14184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 19173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 24175 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 29182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 34183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 39177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 44183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 49177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 54175 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 59177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 64184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 64185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomLayout:: 69179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 74172 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 79171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 84173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 89183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 94183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 99185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 104182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 109184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 114175 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 119178 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 124172 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 124188 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomLayout:: 129185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 134185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 139182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 144174 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 149183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 154185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 159177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 164171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 169180 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 174177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 179185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 184178 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 184194 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Staying longer at work because you believe in your work! <*>
+CustomLayout:: 189184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 194172 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 199171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 204181 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 209182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 214173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 219171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 224177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 229178 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 234174 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 239172 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 244172 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 244202 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Staying longer at work because you believe in your work! <*>
+CustomLayout:: 249180 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 254179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 259173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 264181 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 269171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 274180 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 279184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 284184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 289181 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 294179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 299186 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 304183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 304215 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Staying longer at work because you believe in your work! <*>
+CustomLayout:: 309179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 314177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 319173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 324178 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 329183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 334173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 339185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 344176 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 349179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 354174 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 359178 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 364186 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 364218 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomLayout:: 369184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 374176 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 379178 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 384186 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 389181 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 394176 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 399173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 404177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 409175 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 414183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 419180 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 424179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 424225 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Investing money because you want to become financially independent! <*>
+CustomLayout:: 429174 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 434174 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 439185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 444183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 449185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 454185 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 459173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 464177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 469184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 474179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 479180 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 484171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 484233 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomLayout:: 489173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 494182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 499172 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 504177 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 509173 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 514171 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 519182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 524182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 529182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 534186 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 539182 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 544178 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 544240 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Playing sports because you enjoy how they make you feel! <*>
+CustomLayout:: 549179 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 554180 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 559184 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 564183 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 569180 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 570645 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 570648 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+CustomLayout:: 570650 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+CustomLayout:: 633 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 51724 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomLayout:: 636 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: prod
+CustomLayout:: 683 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 684 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1214 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1271 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 1871 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 1879 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 1880 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 1880 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 1952 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 1954 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1268 ms
+CustomLayout:: 1988 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 2091 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 2099 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomLayout:: 2260 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2301 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2397 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2468 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 3020 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 3027 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3357 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 3689 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56771d65, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c1c37e0, org.springframework.security.web.header.HeaderWriterFilter@2c2873a8, org.springframework.security.web.authentication.logout.LogoutFilter@696fba41, com.example.facSchedule.config.security.JwtFilter@216048ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2dc17fa7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@465927ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1158b66f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67cdbc01, org.springframework.security.web.session.SessionManagementFilter@504e5853, org.springframework.security.web.access.ExceptionTranslationFilter@f7b716b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f51d5d8]
+CustomLayout:: 3916 INFO [restartedMain] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+CustomLayout:: 4162 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 4182 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 4196 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 4206 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Studying because you are curious about the topics! <*>
+CustomLayout:: 4211 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 3.912 seconds (JVM running for 4.725)
+CustomLayout:: 4239 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomLayout:: 4240 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+CustomLayout:: 4241 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+CustomLayout:: 4254 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 4257 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 4451 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 4452 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 4705 ERROR [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/schedule": An error happened during template parsing (template: "class path resource [templates//schedule.html]")
+CustomLayout:: 4709 ERROR [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//schedule.html]")] with root cause
+CustomLayout:: 4713 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 4714 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 9216 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 14210 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 19216 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 24219 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 29222 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 30678 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 30681 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+CustomLayout:: 30684 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+CustomLayout:: 559 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Starting FacScheduleApplication using Java 11.0.13 on DESKTOP-EAMIV2F with PID 53356 (C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule\target\classes started by P H I L I P S in C:\Users\P H I L I P S\Desktop\facSchedule (4)\facSchedule)
+CustomLayout:: 561 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - The following profiles are active: prod
+CustomLayout:: 597 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+CustomLayout:: 598 INFO [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+CustomLayout:: 1115 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+CustomLayout:: 1171 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+CustomLayout:: 1710 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+CustomLayout:: 1717 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 1718 INFO [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+CustomLayout:: 1719 INFO [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+CustomLayout:: 1796 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+CustomLayout:: 1797 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1198 ms
+CustomLayout:: 1827 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+CustomLayout:: 1921 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+CustomLayout:: 1930 INFO [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./scheduler'
+CustomLayout:: 2084 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+CustomLayout:: 2116 INFO [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+CustomLayout:: 2210 INFO [restartedMain] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+CustomLayout:: 2278 INFO [restartedMain] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+CustomLayout:: 2841 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+CustomLayout:: 2848 INFO [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+CustomLayout:: 3190 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+CustomLayout:: 3532 INFO [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@314d0378, org.springframework.security.web.context.SecurityContextPersistenceFilter@f16a3ae, org.springframework.security.web.header.HeaderWriterFilter@355daef9, org.springframework.security.web.authentication.logout.LogoutFilter@227ae61f, com.example.facSchedule.config.security.JwtFilter@ade0ca1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@734f847d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c23c850, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41bc4452, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@983ab09, org.springframework.security.web.session.SessionManagementFilter@2b6c370b, org.springframework.security.web.access.ExceptionTranslationFilter@47c317a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3eccd0c5]
+CustomLayout:: 3770 INFO [restartedMain] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+CustomLayout:: 4004 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+CustomLayout:: 4021 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+CustomLayout:: 4039 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+CustomLayout:: 4048 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Some motivation for log reader:) <*> Traveling because you want to explore different cultures! <*>
+CustomLayout:: 4053 INFO [restartedMain] com.example.facSchedule.FacScheduleApplication - Started FacScheduleApplication in 3.767 seconds (JVM running for 4.835)
+CustomLayout:: 7160 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+CustomLayout:: 7161 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+CustomLayout:: 7163 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+CustomLayout:: 7177 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7178 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7349 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7349 INFO [http-nio-8080-exec-1] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7723 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7723 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7724 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7724 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7724 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7724 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7725 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7726 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7732 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7732 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7732 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7732 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7733 INFO [http-nio-8080-exec-3] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7733 INFO [http-nio-8080-exec-2] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7733 INFO [http-nio-8080-exec-4] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7734 INFO [http-nio-8080-exec-5] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7791 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7792 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 7797 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - do filter...
+CustomLayout:: 7797 INFO [http-nio-8080-exec-6] com.example.facSchedule.config.security.JwtFilter - eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290cXdlIiwiZXhwIjoxNjQwNzI4ODAwfQ.ReVHCvhgmSF4dd4VE-8P_guAAXwtIqe7PukqrXyrrrq9UKWKIu-sgHB4KVZFXPthxcqFbvMdP6p8m-0oUDXsfQ
+CustomLayout:: 9061 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 14053 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 19052 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 24062 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 29051 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 34051 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 39062 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 44056 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 49058 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned
+CustomLayout:: 54056 INFO [scheduling-1] com.example.facSchedule.utils.Sheduler - Cache cleaned

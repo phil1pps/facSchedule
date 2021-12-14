@@ -80,7 +80,7 @@ public class StudentService {
         return result;
     }
 
-    public String getClassesForDay(Long studentId, int numOfDay) throws NotFoundException, ParseException {
+    public List<String> getClassesForDay(Long studentId, int numOfDay) throws NotFoundException, ParseException {
         try {
             List<ClassModel> allClasses = getClassesForStudent(studentId);
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
@@ -97,20 +97,20 @@ public class StudentService {
                 else if (cm.getNumOfClass()==5)adds="*15:00-16:20*";
                 else if (cm.getNumOfClass()==6)adds="*16:30-17:50*";
                 else if (cm.getNumOfClass()==7)adds="*18:00-19:20*";
-                finalRes.add( adds +" subject:" + cm.getSubjectName() + " group:" +  cm.getGroupName() +'\n');
+                finalRes.add( adds +" subject:" + cm.getSubjectName() + " group:" +  cm.getGroupName() +"\n");
             }
             finalRes.stream().sorted().collect(Collectors.toList());
 
-            StringBuilder sb = new StringBuilder();
-            sb.append(addToDay(today,numOfDay).toString().substring(0,10)+'\n');
-            for (String cm : finalRes) {
-                sb.append(cm);
-            }
+            List<String> sb = new ArrayList<>();
+            sb.add(addToDay(today, numOfDay).toString().substring(0, 10)+"\n");
+            sb.addAll(finalRes);
 
-            return sb.toString();
+            return sb;
         }
         catch (NotFoundException ex) {
-            return ex.getMessage();
+            List<String> l = new ArrayList<>();
+            l.add(ex.getMessage());
+            return l;
         }
     }
 
